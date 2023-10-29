@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    /> -->
+  <title>PROCESS</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      NHỮNG ĐIỀU CẦN BIẾT VỀ THỦ TỤC ĐĂNG KÝ THI TOEIC
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/project-development-business-woman-vector-concept_107791-12167.jpg?w=1380&t=st=1698403715~exp=1698404315~hmac=a921af8814c141db0ccccba5d79bccdd90e2846bbd1f5d6c2b09009a56733e2e"
+      width="80%" height="200px" />
+    <p class="des">
+      TOEIC là một trong những chứng chỉ uy tín đánh giá trình độ thành thạo khi sử dụng tiếng Anh. Một kết quả thi
+      TOEIC tốt là hành trang hoàn hảo cho bạn khi đi xin việc cũng như trong quá trình làm việc mỗi ngày. Để có một kết
+      quả tốt nhất, ngoài rèn luyện về kiến thức thì những lưu ý trong cách đăng ký thi TOEIC sẽ giúp bạn thêm tự tin
+      bước vào cuộc thi.
+    </p>
+    <span class="hidden-menu" onclick="openNav()"><i class="bi bi-list" style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Đăng ký thi TOEIC ở đâu?</a></li>
+      <li><a href="#second">Thủ tục chi tiết đăng ký thi TOEIC?</a></li>
+      <li><a href="#third">Những lưu ý cần biết khi đi thi TOEIC</a></li>
+      <li><a href="#fourth">Cách nhận kết quả thi TOEIC</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Đăng ký thi TOEIC ở đâu?</li>
+          <div class="img-wrapper"><img
+              src="https://employer.jobsgo.vn/uploads/media/img/117_pictures_library_8_20170104161701.jpg" alt="" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <p>
+            Tổ chức chính thức có thẩm quyền ra cấu trúc đề thi TOEIC trên thế giới là EST. Hiện nay, ở Việt Nam, chỉ có
+            duy nhất trung tâm IIG được phép tổ chức, nhận đăng ký thi TOEIC và cấp chứng chỉ chính thức. Các địa điểm
+            đăng ký và tổ chức thi TOEIC chính thức hiện nay nằm trải đều tại các thành phố lớn như Hà Nội, Hồ Chí Minh
+            và Đà Nẵng.<br>
+            Để đăng ký thi TOEIC, bạn bắt buộc đăng kí online trước theo hướng dẫn tại: Đăng ký TOEIC online. Sau khi
+            đăng kí xong, bạn sẽ được hẹn 1 ngày đến IIG, mang theo giấy tờ để hoàn thành thủ tục thi. Đến hôm thi, bạn
+            chỉ việc mang giấy tờ đến (giấy tờ gì bạn sẽ được báo trước lúc đến IIG).<br>
+            <strong>Lưu ý:</strong> Nếu đã hẹn ngày lên, mà bạn không lên thì sẽ bị IIG phạt khá nặng (có thể là cấm
+            thi), tuy nhiên nếu có việc đột xuất không lên được, hãy thông báo cho họ theo hướng dẫn lúc đăng kí thi.
+            Cuối giờ thi, bạn sẽ được thông báo: nếu muốn giao phiếu điểm tại nhà thì đăng kí ngay tại chỗ.<br>
+            <br>
+            <strong>Các địa chỉ đăng ký trực tiếp tại IIG</strong><br>
+            <strong>MIỀN BẮC:</strong><br>
+            <strong>Trụ sở chính IIG Việt Nam</strong><br>
+            Địa chỉ: 75 Giang Văn Minh, P. Kim Mã, Q. Ba Đình, TP. Hà Nội<br>
+            Sđt: 1900 636 929<br>
+            Gmail: info@iigvietnam.edu.vn<br>
+            <br>
+            <strong>Văn phòng Trung Yên - Hà Nội</strong><br>
+            Địa chỉ: Tầng 3 Trung Yên Plaza, Số 1 Trung Hòa, Cầu Giấy, Hà Nội<br>
+            Sđt: 1900 636 929<br>
+            Gmail: info@iigvietnam.edu.vn<br>
+            <br>
+            <strong>Trung tâm Ươm và Đào tạo Test site Công nghệ cao (HITC)</strong><br>
+            Địa chỉ: Khu CNC Hòa Lạc, Km 29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội<br>
+            Sđt: 0912 242 867<br>
+            Gmail: vananh@vitec.org.vn<br>
+            <br>
+            <strong>Đại học Kinh tế Quốc dân Hà Nội</strong><br>
+            Địa chỉ: Văn phòng Nhà 9 và Phòng 102A Nhà B2 - Trường ĐH Kinh tế Quốc Dân. Đường Trần Đại Nghĩa, Hai Bà
+            Trưng, Hà Nội<br>
+            Sđt: 0912 557 990<br>
+            Gamil: truonggianglm@gmail.com<br>
+            <br>
+            <strong>Đại học Hàng hải Việt Nam</strong><br>
+            Địa chỉ: 484 Lạch Tray, Đổng Quốc Bình, Lê Chân, Hải Phòng<br>
+            Sđt: 0225 3829 109<br>
+            Gmail: trangltt@vimaru.edu.vn<br>
+            <br>
+            <strong>Đại học kỹ thuật công nghiệp Thái Nguyên</strong><br>
+            Địa chỉ: Số 666 Đường 3-2, P.Tích Lương, TP Thái Nguyên - Tỉnh Thái Nguyên<br>
+            Sđt: 0978 347 654<br>
+            Gmail: tkdinhphuong@gmail.com<br>
+            <br>
+            <strong>Đại Học CNTT & Truyền thông Thái Nguyên</strong><br>
+            Địa chỉ: Đường Z115, Quyết Thắng, Thành Phố Thái Nguyên<br>
+            Sđt: 0975 987 867<br>
+            Gmail: hanhnguyentq9888@gmail.com<br>
+            <br>
+            <strong>Đại Học Hùng Vương Phú Thọ</strong><br>
+            Địa chỉ: Phường Nông Trang, TP Việt Trì, Phú Thọ<br>
+            Sđt: 0981 755 575<br>
+            Gmail: hongminhpt556@gmail.com<br>
+            <br>
+            <strong>MIỀN TRUNG:</strong>
+            <strong>IIG Việt Nam chi nhánh Đà Nẵng</strong><br>
+            Địa chỉ: 19 Hoàng Văn Thụ, Q. Hải Châu, Đà Nẵng<br>
+            Sđt: 02363 565 888<br>
+            Gmail: dn.online@iigvietnam.edu.vn<br>
+            <br>
+            <strong>Trung tâm Phát triển phần mềm Đại học Đà Nẵng</strong><br>
+            Địa chỉ: 41 Lê Duẩn, Q. Hải Châu, Đà Nẵng<br>
+            Sđt: 02362 240 741<br>
+            Gmail: msita.vietnam@gmail.com<br>
+            <br>
+            <strong>Trường Đại học Nha Trang</strong><br>
+            Địa chỉ: Số 2 Nguyễn Đình Chiểu- TP Nha Trang- Khánh Hòa<br>
+            Sđt: 02586 262 627<br>
+            Gmail: ttnn@ntu.edu.vn<br>
+            <strong>MIỀN NAM:</strong><br>
+            <Strong>IIG Việt Nam chi nhánh Hồ Chí Minh</Strong><br>
+            Địa chỉ: Tầng 1, Tháp 1 The Sun Avenue, Số 28 Mai Chí Thọ, An Phú, Thủ Đức, Hồ Chí Minh<br>
+            Sđt: 0283 9905 888<br>
+            Gmail: info@iigvietnam.edu.vn<br>
+            <br>
+            <strong>Đại học Kinh tế Tp. HCM</strong><br>
+            Địa chỉ: 59C Nguyễn Ðình Chiểu, phường 6, quận 3, TP.HCM<br>
+            Sđt: 02838 257 263<br>
+            Gmail: cntt@ueh.edu.vn<br>
+            <br>
+            <strong>Cao Đẳng Kinh Tế Tp. HCM</strong><br>
+            Địa chỉ: 33 Vĩnh Viễn, phường 2, quận 10, TP. HCM<br>
+            Gmail: daotaonganhan@kthcm.edu.vn<br>
+            <br>
+            <strong>Trường Đại học Nguyễn Tất Thành</strong><br>
+            Địa chỉ: 458/3F Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7, TP. HCM<br>
+            Sđt: 02837 713 765<br>
+            <br>
+            <strong>Trường Cao đẳng Quốc tế Tp. HCM</strong><br>
+            Địa chỉ: 460 D Kinh Dương Vương, Phường An Lạc A, Q. Bình Tân, TP.HCM<br>
+            Sđt: 0982 504 504<br>
+            Gmail: fit@ich.edu.vn<br>
+            <br>
+            <strong>Trường Đại học Văn Hiến</strong><br>
+            Địa chỉ: 624 Âu Cơ, P10, Q.Tân Bình, TP. HCM<br>
+            Gmail: ttcntt.vhu.edu.vn<br>
+            <br>
+            <Strong>Trường Trung cấp Kỹ thuât Công nghệ Hùng Vương</Strong><br>
+            Địa chỉ: 161 – 165 Nguyễn Chí Thanh, Quận 5, TP. Hồ Chí Minh<br>
+            Sđt: 0766 672 620<br>
+            Gmail: truongtcnhungvuong@gmail.com<br>
+          </p>
+          <li id="second">Thủ tục chi tiết đăng ký thi TOEIC?</li>
+          <div class="img-wrapper"><img
+              src="https://img.freepik.com/free-photo/calendar-with-checklist-date-schedule-3d-icon_107791-15691.jpg?size=626&ext=jpg&uid=R121529161&ga=GA1.1.1027036393.1697741097&semt=sph"
+              alt="" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+
+          <p>
+            <strong>Các loại giấy tờ đăng kí thi</strong><br>
+            - Giấy tờ cá nhân: 1 trong 3 loại dưới đây:<br>
+            - Đăng kí thi bằng chứng minh nhân dân (không được bong tróc các góc, nếu bong ra thì bị nhẹ vẫn được xem
+            xét)<br>
+            - Đăng kí bằng công cước công dân<br>
+            - Đăng kí bằng hộ chiếu<br>
+            - Ảnh thẻ: ảnh 3 x 4 nền xanh biển, hoặc trắng, tuy nhiên cần lưu ý: nhiều nơi chụp hình thẻ, họ sẽ in ra
+            ảnh có kích thước nhỏ, không đúng 3 x 4, và IIG không chấp nhận, nên khi chụp, bạn hãy yêu cầu họ chụp và in
+            đúng kích thước.<br>
+            <br>
+            <strong>Về phí thi có 2 mức:</strong><br>
+            - 990k: Dành cho sinh viên có thẻ sinh viên còn hạn, hoặc cho những bạn có thẻ sinh viên quá hạn, nhưng vẫn
+            xin được giấy chứng nhận là sinh viên của trường. Trường hợp này, các bạn hãy mang đầy đủ thẻ sinh viên còn
+            hạn và giấy chứng nhận là sinh viên trường (được cấp không quá 1 tháng) đến IIG để được hỗ trợ phí thi.<br>
+            - 1390k: Dành cho người đi làm.<br>
+            <br>
+            <strong>Cách xem lịch và chọn ngày thi TOEIC</strong><br>
+            Hiện nay, tất cả lịch thi và địa điểm thi dự kiến đều được công bố chính thức trên website iigvietnam.com
+            giúp thí sinh dễ dàng tham khảo và lựa chọn. Các thí sinh nên tham khảo kỹ ngày thi cũng như địa điểm thi
+            sao cho thuận tiện nhất, tránh những rắc rối không mong muốn.<br>
+
+            Sau khi lựa chọn được ngày thi phù hợp, thí sinh tiến hành chuẩn bị hồ sơ và đăng ký thi muộn nhất 1 ngày
+            trước ngày thi (trong trường hộ còn chỗ). Chính vì vậy, để đảm khả năng dự thi, thí sinh nên tham khảo và
+            nộp đơn đăng ký dự thi sớm trước 2 tuần về 3 trụ sở của IIG.<br>
+            <br>
+            <strong>Nhận được gì sau khi đăng ký thi</strong><br>
+            Sau khi đăng ký thi TOEIC, thí sinh sẽ nhận lại phiếu đăng ký dự thi Toeic cùng một quyển hướng dẫn thi
+            TOEIC. Trước kì thi, bạn nên đọc và nghiên cứu kỹ những nội dung trong quyển hướng dẫn đảm bảo một kỳ thi
+            suôn sẻ.<br>
+            Trong cuốn sách hướng dẫn, thí sinh sẽ được cung cấp đầy đủ thông tin về dạng bài thi, những vật được mang
+            cũng như bị cấm mang vào phòng thi. Ngoài ra, tất cả những câu hỏi thường gặp và quy chế thi cũng được thể
+            hiện đầy đủ trong quyển hướng dẫn này.<br>
+            <br>
+            <strong>Cách chuyển thời gian thi hoặc hủy thi</strong><br>
+            Trước ngày thi, thí sinh nếu muốn chuyển thời gian hay hủy thi cần thông báo sớm nhất.<br>
+            Để chuyển ngày thi, thí sinh có nhu cầu hoãn thi cần thông báo với hội đồng thi trước 2 ngày so với kỳ thi
+            chính thức. Đồng thời, mỗi thí sinh phải đóng phí chuyển ngày thi giá 100.000 VNĐ.<br>
+            Trong trường hợp cần hủy lịch: thí sinh hủy lịch thi đăng ký trước 5 ngày trước kỳ với thi chính thức. Nếu
+            thực hiện thủ tục hủy lịch đúng thời gian quy định, các thí sinh sẽ được hoàn trả 50% lệ phí đã nộp trước
+            đó.<br>
+          </p>
+          <li id="third">Những lưu ý cần biết khi đi thi TOEIC</li>
+          <p>
+            <strong>Chuẩn bị đầy đủ giấy tờ trước khi đi thi</strong><br>
+            Để được vào phòng dự thi, thí sinh cần mang theo CMND hoặc hộ chiếu đúng với giấy tờ đã đăng ký. Ngoài ra,
+            thí sinh còn phải mang theo phiếu đăng ký thi TOEIC đã nhận trước đó cùng bút chì và tẩy do hội đồng thi
+            phát.<br>
+            Ngoài bút và tẩy được phát, bạn nên chú ý để hết tất cả thiết bị di động, đồng hồ, hộp bút hoặc gửi vào tủ
+            đồ (nếu có). Nếu bị phát hiện mang vào phòng thi, bạn hoàn toàn có thể bị hủy kết quả thi hoặc cấm thi vĩnh
+            viễn tùy mức độ vi phạm.<br>
+            <br>
+            <Strong>Lưu ý khi làm bài thi</Strong><br>
+            Để đạt được kết quả thi TOEIC tốt nhât, trong suốt quá trình làm bài, bạn nên chú ý về phân bố thời gian và
+            những câu bẫy thường gặp. Thí sinh sẽ có tổng thời gian 2 tiếng để hoàn thành bài thi đọc và nghe. Chính nhờ
+            vậy, bạn nên cố gắng rèn luyện kĩ năng phản xạ và làm bài nhanh giúp hiệu quả làm bài tốt hơn.<br>
+            Đồng thời, trong quá trình làm bài, bạn không nên bỏ sót một câu nào. Khi làm bài thi, cần tô thật kín ô đáp
+            án bằng bút chì, tuyệt đối không được dùng các loại bút khác. Tuyệt đối tuân thủ và làm đúng những quy định
+            trong phòng thi mà giám thị đã phổ biến.<br>
+            <br>
+            <strong>Trong kì thi IIG có nhiều quy định trong phòng thi, hầu hết nhắc đến việc cấm gian lận thi cử. Nói
+              chung họ sẽ kiểm tra rất nghiêm ngặt, và bạn hoàn toàn không nên nghĩ đến chuyện mang tài liệu vào phòng
+              thi. Về cụ thể nội dung quy định, bạn sẽ được thông báo, tuy nhiên, còn một số điều khác cần lưu
+              ý:</strong><br>
+            - Trong lúc làm bài thi, bạn sẽ không được viết, vẽ, đánh dấu lên đề thi, nên khi làm đề thi thử. Vì vậy,
+            khi luyện đề, bạn nên làm quen điều này, và cũng không biết hay đánh dấu gì lên bộ đề.<br>
+            - Bút chì tô cần phải có màu đậm, vì vậy nếu nhận được bút màu nhạt, hãy yêu cầu đổi bút ngay từ đầu.<br>
+            - Không được ho, hắc xì, nói thành tiếng trong phòng thi, quy định này khá gắt, nếu vi phạm, bạn sẽ bị nhắc
+            nhở lần 1, lần 2 sẽ bị mời ra phòng thi. Vì vậy, nếu bị bệnh và xác định sẽ ho, hắc xì nhiều thì bạn nên báo
+            sớm với giám thị để được đổi lại ngày thi khác.
+          </p>
+          <li id="fourth">Cách nhận kết quả thi TOEIC</li>
+          <div class="img-wrapper"><img
+              src="https://img.freepik.com/free-vector/ups-downs-entrepreneur-path_3446-582.jpg?w=1060&t=st=1698403397~exp=1698403997~hmac=53f8a5873516dde64af77b86b8243c24827b034d232ae21f667ec627419ff4f3"
+              alt="" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <P>
+            Kết quả thi sẽ được trả trực tiếp sau 5 ngày làm việc nếu bạn luyện thi TOEIC ở Hà Nội và 7 ngày tại trụ sở
+            Hồ Chí Minh và Đà Nẵng. Để nhận kết quả thi, thí sinh có thể đến trực tiếp văn phòng đăng ký thi TOEIC sau
+            thời gian quy định.<br>
+
+            Mỗi bằng TOEIC sẽ có giá trị sử dụng trong 2 năm và được công nhận như một chứng chỉ hợp lệ cho mục đích xin
+            việc, xét tốt nghiệp, du học, …<br>
+          </P>
+        </ol>
+      </div>
+    </div>
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="https://i.pinimg.com/originals/ca/22/d8/ca22d8d29b1e982a9293811cbc652d8b.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a
+              href="https://www.anhngumshoa.com/tin-tuc/dia-diem-thong-tin-dang-ky-thi-toeic-tai-iig-vietnam-34944.html">Địa
+              điểm và thông tin đăng kí thi TOEIC trực <br>tiếp tại IIG Việt Nam</a>
+          </li>
+          <li>
+            <a href="https://www.anhngumshoa.com/cau-truc-de-thi-toeic-news34842.html">Cấu trúc đề thi TOEIC : Full 7
+              phần Reading <br>và Listening</a>
+          </li>
+          <li>
+            <a
+              href="https://www.anhngumshoa.com/tin-tuc/kinh-nghiem-phan-chia-thoi-gian-lam-bai-thi-toeic-hop-ly-nhat-38059.html">Kinh
+              nghiệm phân chia thời gian làm bài thi <br>TOEIC hợp lí nhất</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Hy vọng, bài viết đã giúp bạn giải đáp mọi thắc mắc về quy trình đăng ký thi TOEIC. Chuẩn bị sẵn hành trang và sự
+      tự tin, chúc bạn sẽ có được một kết quả thi thật tốt.<br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <p><img src="img/logo.png" alt="Blue★"></p>
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Ticket</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="index.html">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>

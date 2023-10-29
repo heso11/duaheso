@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    /> -->
+  <title>READING</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      ;
+    /> -->
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    /> -->
+
+  <!-- Libraries Stylesheet -->
+  <!-- <link href="lib/animate/animate.min.css" rel="stylesheet" /> -->
+
+  <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" /> -->
+
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      READING
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/book-club-concept-with-people-read-books_107791-13290.jpg?w=1380&t=st=1698350848~exp=1698351448~hmac=ec99bec428159788e691d795bda282d73e5262cec0f0fdb7330d3cb52a268be1" />
+    <p class="des">
+      TOEIC reading chiếm 3/7 part trong đề thi TOEIC. Nội dung chủ yếu của phần reading thường được đề cập tới các
+      chủ đề như ngữ pháp hoặc từ vựng. Tuy nhiên trong 3 part reading này lại chứa rất nhiều "bẫy" khiến bạn dù thực
+      hành nhiều lần vẫn phạm phải những lỗi mất điểm rất đáng tiếc. Hãy cùng tụi mình tìm hiểu chi tiết trong bài
+      viết dưới đây.
+    </p>
+    <sxpan class="hidden-menu" onclick="openNav()"><i class="bi bi-list"
+        style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Những điều cần biết về Part 5</a></li>
+      <li><a href="#second">Những điều cần biết về Part 6</a></li>
+      <li><a href="#third">Những điều cần biết về Part 7</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Những điều cần biết về Part 5</li>
+          <ol class="bigger" type="1">
+            <li class="big">Sơ lược về Part 5 TOEIC</li>
+            <p>
+              Đề thi TOEIC gồm 30 câu hỏi và là part đầu tiên của phần Reading. Part 5 bắt đầu từ câu 101 đến 140 với
+              nội dung các câu hỏi về từ vựng và ngữ pháp xoay quanh các chủ đề khác nhau. Với cấu trúc part 5 gồm có
+              12-13 câu về từ loại, 11 – 13 câu về từ vựng, 14 – 16 câu còn lại thuộc các chủ đề về thì, từ nối, loại từ
+              và mệnh đề quan hệ khác nhau và cấu trúc cơ bản như sau:Gồm các câu chưa hoàn thành + 4 từ hoặc cụm từ
+              được đánh dấu tương ứng A, B, C, hoặc D => chọn từ đúng nhất để hoàn thành câu.
+            </p>
+            <p>Part 5 bao gồm những câu hỏi ngắn và không yêu cầu tổng hợp thông tin và được đánh giá là dễ hơn 2 Part
+              sau. Đặc điểm của Part 5 là câu hỏi có thể phân loại được, từ vựng thường xuyên xuất hiện lặp đi lặp lại
+              theo một số chủ đề thì việc học và nâng cao Part này không quá khó khăn. Part 5 đòi hỏi bạn phải có những
+              kỹ năng khá về từ vựng để có thể giải quyết hiệu quả Part này.
+            </p>
+            <li class="big">Các dạng bài tập trong Part 5</li>
+            <p>
+              Bạn nên nhìn trước khoảng trống cần điền để xác định vị trí cần điền và xác định từ loại cần điền, với 1
+              vài trường hợp bạn cần phải dịch nghĩa đầy đủ câu hỏi để có thể điền vào chỗ trống.
+            </p>
+            <p>Dưới đây là 1 vài loại bài tập thường xuất hiện trong Part 5 bạn có thể tham khảo nhé.</p>
+            <p style="font-weight: 600; color: #00aa4f;">Loại 1:
+              Meaning</p>
+            <p>Ex: This fax from Mr. Stevens was _______ at 11
+              a.m Eastern Standard Time.</p>
+            <p>
+              A. transplanted
+            </p>
+            <p>
+              B. transferred
+            </p>
+            <p>
+              C. transported
+            </p>
+            <p>
+              D. transmitted
+            </p>
+            <p class="true">
+              Đáp án (D) Transmitted
+            </p>
+            <p style="font-weight: 600; color: #00aa4f;">Loại 2:
+              Preposition</p>
+            <p>Phần này bạn nên sử dụng những cụm từ đi cùng với
+              nhau hoặc các cụm thành ngữ. Ví dụ eligible for,
+              contribute to, interested in…
+            </p>
+            <p>
+
+              Ex: All written proposals must comply _______
+              Walnut Food’s internal document guidelines.
+            </p>
+            <p>
+
+              A. by
+            </p>
+            <p>
+
+              B. for
+            </p>
+            <p>
+
+              C. to
+            </p>
+            <p>
+
+              D. with
+            </p>
+            <p class="true">
+              Đáp án (D) vì cụm comply with sth
+            </p>
+            <p>
+            <p>Đây là ngữ pháp và bài tập thực hành mình
+              sưu
+              tầm được:
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1Ig41UIHwOFJ0Ieun5mKr7F6Hr6ITlZY8">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+            </p>
+            <p style="font-weight: 600; color: #00aa4f;">Loại 3:
+              Word form</p>
+            <p>Đây là phần gỡ điểm và câu hỏi chủ yếu thuộc các
+              phần ngữ pháp sau:</p>
+            <p>
+
+              - Prep + N/V-ing: sau giới từ là danh từ hoặc
+              V-ing
+            </p>
+            <p>
+
+              - a/the + (adv + adj + N) = a/the + N phrase.
+            </p>
+            <p>
+
+              - To be + adv + V-ed / V-ing (giữa be và p.p/
+              V-ing là trạng từ).
+            </p>
+            <p>
+              - adv + Verb hoặc Verb + adv.
+            </p>
+            <p>
+
+              - Các động từ Causative:
+            </p>
+            <p>
+              Dạng chủ động: S + Make, Have, Let + SB + DO
+              something.
+            </p>
+            <p>
+              S + V khác Make/Have/Let + SB + TO DO something.
+            </p>
+            <p>
+              Dạng bị động: S + Causative Verb + O + Past
+              Participle
+            </p>
+            <p>
+              Ex: I had my car fixed.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1Re9QS-DTiL22TfTjv66ZvYTUVREsGFRJ">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+            <p>
+              - Dạng câu điều kiện
+            </p>
+            <p>
+              Type 1: If do, will do. (điều kiện có thật ở
+              hiện tại)
+            </p>
+            <p>
+              Type 2: if did, would do (điều kiện ko có thật ở
+              hiện tại)
+            </p>
+            <p>
+              Type 3: if had done, would have done (điều kiện
+              ko có thật ở quá khứ).
+            </p>
+            <p>
+              Thường thì người ta bỏ trống chỗ điền động từ và
+              tùy theo dạng câu điều kiện để hoàn thành.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1Re9QS-DTiL22TfTjv66ZvYTUVREsGFRJ">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+            <p style="font-weight: 600; color: #00aa4f;">Loại 4:
+              Connecting Words và Adverb-clause Markers</p>
+            <p>
+              - Coordinators: for, and, nor, but, or, yet, so. Phần này ta cần đọc hiểu ý nghĩa của câu để bạn có thể
+              chọn từ điền.
+            </p>
+            <p>
+              Correlative Conjunctions: Both … and; not only…. but also; either … or, neither…nor. Với các cụm thường đi
+              cùng nhau thì bạn cần luyện kĩ cấu trúc để chọn được đáp án phù hợp nhất.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://docs.google.com/document/d/1eIrjGDeRJexRUYSCffkeG6fFf_V35a69/edit">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+            <p>
+              - Adverb - clause Markers
+            </p>
+            <p>
+              Before, after, since, until, once/as soon as, as/when, while. Với dạng này bạn cũng phải dịch nhanh nghĩa
+              để chọn được đáp án phù hợp nhất.
+            </p>
+            <p>
+              Because/since, Although/though/Even though/While/Whereas; if, unless, Whether … or…/ so that/ in order
+              that; so adj that + Clause
+            </p>
+            <p>
+              Because of/Due to + Noun/V-ing
+            </p>
+            <p>
+              Despite/In spite of + Noun/V-ing
+            </p>
+            <p>
+              Loại này khi làm cần chú ý sau chỗ trống là N/V-ing hay là mệnh đề – clause để chọn từ nối thích hợp.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1sbLcc7IlIeKpoVhNV_HTvm5ITA4v6Aij">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+
+            <p style="font-weight: 600; color: #00aa4f;">Loại 5:
+              Relative Pronoun</p>
+            <p>
+              Who, whom, which, what, whose. Với dạng này, bạn cần chú ý nhiều hơn tới chủ ngữ câu hỏi.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/10MyE-Kz1osr9myw5k43MPFxdU6Ki7nBD">
+                  Ngữ pháp và bài tập thực hành</a>
+              </button>
+            </div>
+            <p style="font-weight: 600; color: #00aa4f;">Loại 6:
+              Pronoun/ Reflexive/ Possessive adjectives</p>
+            <p>
+              Khi làm loại này ta cần lưu ý chỗ trống là chủ ngữ hay tân ngữ? Dạng này tương đối khó và dễ gây nhầm lẫn.
+            </p>
+
+            <li class="big">Bẫy thường gặp và kinh nghiệm chinh phục Part 5</li>
+            <p style="font-weight: 600; color: #004aaa;">a.
+              Một số bẫy thường gặp trong Part 5</p>
+            <p>
+              Các nội dung được đề cập tới trong Part 5 thường đề cập nhiều tới từ vựng hoặc ngữ pháp. Với Part 5, các
+              bẫy từ loại như các Part trước là điều không thể tránh khỏi. Dưới đây là 1 số bẫy thường gặp nhất của Part
+              5:
+            </p>
+            <p style="font-weight: 600; color: #da1414;">Bẫy về từ loại</p>
+            <p>
+              Bạn có thể bị “bẫy” bởi các đuôi của từ loại như các đuôi “al” và “tive” thường là tính từ, nhưng bạn có
+              thể vừa bị đánh bẫy bởi các danh từ có đuôi “al” và “tive” như sau:
+            </p>
+            <p>
+              proposal (n): bản đề xuất, kiến nghị
+            </p>
+            <p>
+              alternative (n): lựa chọn
+            </p>
+            <p style="font-weight: 600; color: #da1414;">Bẫy từ vựng</p>
+            <p>
+              Trong tiếng Anh có một số cặp từ gây nhầm lẫn tiêu biểu như: accept (chấp nhận) và except (ngoại trừ),
+              affect (gây ảnh hưởng) và effect (sự ảnh hưởng), hard (khó, chăm chỉ) và hardly (hiếm khi), lose (đánh
+              mất) và loose (rộng, lỏng lẻo), site (vị trí) và sight (tầm nhìn).
+            </p>
+            <p style="font-weight: 600; color: #da1414;">Bẫy tính từ có dạng V_ing hoặc V_ed</p>
+            <p>
+              Rất nhiều người nhầm lẫn rằng: tính từ đuôi “ing” là sử dụng với người còn tính từ đuôi “ed” sử dụng với
+              vật dụng. Các bạn có thể có cách khác
+            </p>
+            <p>
+              V_ing: tính từ mang nghĩa chủ động, nghĩa là chủ ngữ thực hiện Verb đó.
+            </p>
+            <p>
+              V_ed: tính từ mang nghĩa bị động, nghĩa là chủ ngữ bị một thứ khác thực hiện Verb đó.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Một số kinh nghiệm chinh phục Part 5</p>
+            <p style="font-weight: 600; color: #da1414;">Thời gian làm bài</p>
+            <p>
+              Bạn chỉ nên ước chừng thời gian hoàn thành Part 5 là 12-15 phút (khoảng 20s/câu). Nếu 1 câu nào đó bạn
+              không thể làm được, hãy chuyển sang câu tiếp theo chứ không nên dừng lại tiếp tục suy nghĩ.
+            </p>
+            <p style="font-weight: 600; color: #da1414;"> Trình tự làm bài</p>
+            <P>Bạn cần nhìn nhanh phần cần điền để xác định phương án phù hợp nhất theo đáp án bên dưới. Nếu câu này
+              thuộc các dạng các câu bên trên bạn hãy ghi nhớ nhanh cấu trúc để chọn. Nếu không xác định được cấu trúc
+              câu, bạn hãy dịch nhanh nghĩa của câu này để chọn từ phù hợp.
+            </P>
+          </ol>
+
+          <li id="second">Những điều cần biết về Part 6</li>
+          <ol type="1">
+            <li class="big">Sơ lược về part 6
+            </li>
+            <p>
+              Part 6 trong đề thi TOEIC bao gồm 16 câu được chia thành 4 đoạn văn nhỏ khác nhau. Với Part 6, thời gian
+              làm bài của bạn chỉ nên giao động từ 7 tới 10 phút với 16 câu này nhé.
+            </p>
+            <p>
+              Mỗi đoạn gồm 3 câu hỏi nhỏ với 4 đáp án để lựa chọn khác nhau (A) (B) (C) hay (D).
+            </p>
+            <li class="big">Các loại câu hỏi trong part 6
+            </li>
+            <p style="font-weight: 600; color: #004aaa;">a.
+              Dạng câu hỏi ngữ pháp ở Part 6 chủ yếu thường hay tập trung vào 3 chủ đề</p>
+            <p>
+              - Parts of speech (Từ loại)
+            </p>
+            <p>
+              Dạng câu hỏi này bạn sẽ cần phải xác định được từ loại còn thiếu trong câu hoặc từ loại đứng trước hoặc
+              ngay sau từ trước đó và hoàn thành câu theo đúng cấu trúc ngữ pháp.
+            </p>
+            <p>
+              Ex: John cannot make a _______ to get married to Mary or stay single until he can afford a house and a
+              car.
+            </p>
+            <p>
+              a. decide
+            </p>
+            <p>
+              b. decision
+            </p>
+            <p>
+              c. decisive
+            </p>
+            <p>
+              d. decisively
+            </p>
+            <p>
+              - Động từ (Verb-related)
+            </p>
+            <p>
+              Với các dạng câu hỏi này, thường bạn sẽ cần phải xác định được cấu trúc câu, dấu hiệu nhận biết của câu,
+              thì của câu để bạn có thể chọn chia động từ theo dạng.
+            </p>
+            <p>
+              Với phần chia động từ này, bạn cần lưu ý học thuộc bảng động từ bất quy tắc đặc biệt với các thì quá khứ
+              và tương lai nhé.
+            </p>
+            <p>
+              Ex: The wedding Party________ held at the Rex Hotel.
+            </p>
+            <p>
+              A. is
+            </p>
+            <p>
+              B. is being
+            </p>
+            <p>
+              C. will be
+            </p>
+            <p>
+              D. is going to be
+            </p>
+            <p>
+              - Liên từ và giới từ (Prepositions & Conjunctions)
+            </p>
+            <p>
+              Bạn cần lưu ý cách sử dụng, vị trí đặt của từng loại liên từ, giới từ để từ đó chọn đáp án chính xác.
+            </p>
+            <p>
+              Ex: He got wet_______ he forgot his umbrella.
+            </p>
+            <p>
+              A. because of
+            </p>
+            <p>
+              B. because
+            </p>
+            <p>
+              C. but
+            </p>
+            <p>
+              D. and
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b.
+              Loại hình đoạn văn trong Part 6</p>
+            <p>
+              Trong Part này, bạn cần tìm từ thích hợp để điền vào chỗ trống, nội dung phần này thường bao gồm các loại
+              văn bản như:
+            </p>
+            <p>
+              - Notices (Thông báo): Cung cấp thông tin về sự kiện sắp diễn ra theo 1 form ngắn.
+            </p>
+            <p>
+              - Letters (Thư từ): Dạng này thường dễ xuất hiện, thường hay sử dụng trong giao tiếp công việc hoặc giao
+              tiếp bạn bè.
+            </p>
+            <p>
+              - Instructions (Hướng dẫn): Cung cấp thông tin cách sử dụng sản phẩm hay dịch vụ hoặc các hướng dẫn người
+              khác cơ bản.
+            </p>
+            <p>
+              - Articles (Bài báo): Các bài báo gồm các bản tin ghi lại các thông tin về tài chính, nghiên cứu hay những
+              bản tin liên quan đến một lĩnh vực cụ thể nào đó.
+            </p>
+            <p>
+              - Ads (Quảng cáo): Nội dung là đoạn quảng cáo ngắn về một sản phẩm hay một dịch vụ nào đó. Đoạn văn ngắn
+              có thể đề cập tới sản phẩm, thương hiệu, giới thiệu sản phẩm.
+            </p>
+            <p>
+              - E-mail: Các đoạn Email được trích dẫn thường mang nội dung sử dụng trong công ty, dùng để giao tiếp giữa
+              đồng nghiệp, đối tác với nhau.
+            </p>
+            <p>
+              - Memorandum (Các thông báo nội bộ): Dạng thông báo nội bộ thường sử dụng để gửi đến các nhân viên trong
+              cùng 1 công ty, tổ chức. Thường là cung cấp các thông tin liên quan đến các vấn đề xảy ra trong văn phòng
+              như Thay đổi chính sách, Thông báo quy định mới, Thông báo về việc thăng chức hay giới thiệu nhân viên
+              mới.
+            </p>
+            <p>
+              - Một số loại văn bản thông dụng khác.
+            </p>
+
+            <li class="big">Tài liệu tham khảo cho TOEIC Part 6
+            </li>
+            <p style="font-weight: 600; color: #004aaa;">a. Một số điểm cần chú ý</p>
+            <p>
+              Các chủ điểm ngữ pháp bạn cần trau dồi để có thể chinh phục Part 6 hiệu quả bao gồm:
+            </p>
+            <p>
+              - Từ loại (noun, verb, adjective, adverb…)
+            </p>
+            <p>
+              - Các thì (present simple, present progressive, present perfect…)
+            </p>
+            <p>
+              - Các hình thức của động từ (infinitive, gerund…)
+            </p>
+            <p>
+              - Cấu trúc câu (đơn, kép, phức).
+            </p>
+            <p>
+              Nếu không có ngữ pháp căn bản thì chắc chắn bạn sẽ mất nhiều thời gian suy nghĩ và có khi lựa chọn sai đáp
+              án do các đáp án được chia theo các dạng từ loại. Bạn cần ôn lại lý thuyết và thực hành nhiều hơn nữa các
+              dạng bài tập qua các nguồn sách ngữ pháp tổng quát.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Một số tài liệu tham khảo</p>
+            <p>
+              - Cuốn ABC TOEIC Reading
+            </p>
+            <p>
+              Cuốn sách được biên soạn với nội dung dành riêng cho những bạn mới bắt đầu nhằm giúp các bạn tăng kỹ năng
+              đọc hiểu trong bài thi TOEIC. Đồng thời, cuốn sách cũng cung cấp cho người đọc những kiến thức cơ bản nhất
+              về từ vựng, ngữ pháp và phương pháp đọc hiểu để người đọc sẵn sàng trong công cuộc chinh phục Part 5, 6, 7
+              TOEIC cực hiệu quả.
+            </p>
+            <p>
+              Link tải: <a href="[PDF+Audio] Download Bộ Sách ABC TOEIC ">[PDF+Audio] Download Bộ Sách ABC TOEIC </a>
+            </p>
+            <p>
+              - Cuốn 1000 Reading Comprehension
+            </p>
+            <p>
+              Cuốn sách này bao gồm 10 đề thi Reading bao gồm 3 Part 5, 6, 7. Các tình huống điền từ trong phần 5 khá
+              tổng quát, bao gồm hết các vấn đề trong bài thi TOEIC (từ loại, từ vựng, liên từ, đảo ngữ...). </p>
+            <p>
+              Link tải: <a href="Tải 1000 Reading Comprehension Practice Test PDF Free">Tải 1000 Reading Comprehension
+                Practice Test PDF Free</a>
+            </p>
+            <p>
+              - Cuốn Tomato Compact Reading
+            </p>
+            <p>
+              Đây là bộ sách khá hay gồm 5 bài Actual test và Answer key giúp các bạn tự luyện tập Part 5, 6, 7 của bài
+              thi TOEIC. Với những bạn có mục tiêu 800 TOEIC thì không nên bỏ qua cuốn sách này đâu.
+            <p>
+              Link tải: <a href="[PDF+Audio] Download Tomato TOEIC ">[PDF+Audio] Download Tomato TOEIC </a>
+            </p>
+
+            <li class="big">
+              Các mẹo và cách tránh bẫy trong Part 6
+            </li>
+            <p style="font-weight: 600; color: #004aaa;">a. Cách tránh bẫy TOEIC Part 6</p>
+            <p>
+              - Xác định từ loại cần điền: Bạn nên đọc nhanh đoạn cần điền và xem kĩ câu hỏi đang cần đáp án, xác định
+              từ loại đang thiếu trong câu và nhanh chóng chia ra và điền vào câu. Thông thường các dạng câu hỏi này bạn
+              đôi khi không cần dịch, tuy nhiên để cẩn thận hơn, bạn vẫn có thể suy đoán nghĩa của từ nhé.<br />
+              - Học các thì thường đi chung với nhau: Trong tiếng Anh có 1 số quy tắc riêng về vị trí của các từ loại
+              với nhau. Tuy nhiên, các bạn cần lưu ý những cụm từ thường đi kèm với nhau và không theo các quy tắc nên
+              bạn cần học thuộc những nhóm từ loại kiểu này nhé<br />
+              - Lưu ý các dấu hiệu nhận biết của các thì trong câu: Hãy ghi nhớ thật kỹ những dấu hiệu nhận biết cơ bản
+              của các thì thường dùng, nhờ đó bạn có thể nhận diện các thì này nhanh chóng và đơn giản hơn đó.<br />
+              - Phán đoán nhanh đáp án sai: Có những đáp án chắc chắn sai, sai khác biệt hẳn so với các đáp án khá. Bạn
+              có thể nhanh chóng loại bỏ những phương án này để tránh làm rối kết quả và thuận tiện hơn cho bạn khi chọn
+              đáp án đúng.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Mẹo làm bài thi TOEIC Part 6</p>
+            <p>
+              - Không cần cố đọc, hiểu hết nội dung đoạn thoại<br />
+              Theo phân tích của ETS và căn cứ vào các bài thi gần đây, bạn vẫn có thể trả lời câu hỏi đúng mà không cần
+              phải đọc hết cả bài, nếu cố gắng đọc hết, dịch hết nó sẽ ngốn của bạn kha khá thời gian đấy (lưu ý Phần
+              này bạn chỉ nên “xử gọn” trong khoảng 7 – 10 phút thôi nhé). Có những câu hỏi bạn chỉ cần đọc hiểu được
+              nội dung của câu trước và sau chỗ trống là có thể trả lời được.<br />
+              Ngoài ra, với các câu hỏi liên quan đến từ vựng, bạn cũng không cần phải hiểu hết tất cả từ vựng trong cả
+              bài, chỉ cần hiểu đoạn văn, thậm chí chỉ cần câu văn đó quanh chỗ trống là có thể đoán được đáp án
+              đúng.<br />
+              - Tập trung ở các điểm ngữ pháp cơ bản, tư duy nhanh. Không cần quá cầu kì hay suy nghĩ theo hướng nâng
+              cao.<br />
+              Nếu có gặp các câu hỏi thiên về ngữ pháp, hãy chú ý rằng câu hỏi ngữ pháp thường sẽ chỉ tập trung vào các
+              điểm ngữ pháp cơ bản, nên bạn không nên tư duy theo những cấu trúc nâng cao nhiều đâu nha.<br />
+              Đặc biệt, tỉ lệ các câu hỏi ngữ pháp thường chiếm tỷ lệ cao hơn trong các loại câu hỏi. Để làm tốt câu hỏi
+              này, bạn nên tìm hiểu chính xác cách dùng thì, sự phù hợp về số và hình thái. Khi trả lời câu hỏi, bạn nên
+              sử dụng phương pháp loại suy để tiết kiệm thời gian và đạt được độ chính xác cao hơn.<br />
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">c. Một số bẫy hay gặp trong Part 6</p>
+            <p>
+              Part 6 thường xuất hiện những cặp từ hơi na ná giống nhau nhưng nghĩa khác nhau hoàn toàn, hoặc thậm chí
+              là những từ phát âm gần giống nhau nhưng khác nghĩa nữa đó, các bạn phải lưu ý cẩn thận nhé.<br />
+              Tụi mình sẽ liệt kê giúp bạn những cặp từ hay gặp để bạn lưu ý nhé:<br />
+              - Used to V – Be used to V-ing<br />
+              + Used to (V): Một thói quen ai đó thường làm trong quá khứ, đến nay không còn nữa<br />
+              + Be/Get used to: Quen với việc làm gì (ở hiện tại)<br />
+              Ví dụ:<br />
+              A. My wife used to work in the same company with me. (In the past, not now)<br />
+              B. I am used to staying up late on this project. (Now)<br />
+              - Remember to V – Remember V-ing<br />
+              + Remember to V: nhớ là sẽ phải làm gì (có thể dùng như một lời nhắc nhở)(hướng về tương lai)<br />
+              + Remember V-ing: nhớ là đã từng làm gì trong quá khứ<br />
+              - Lose – loss – lost<br />
+              + Lose (V): động từ nguyên thể, mang nghĩa là thua, mất. Nó là một động từ bất quy tắc. Quá khứ và phân
+              từ: Lost<br />
+              + Lost (V, PP): quá khứ và phân từ hai của lose.<br />
+              Bạn sẽ hay gặp cụm từ trong đề thi TOEIC như: get lost (lạc đường), the lost luggage (hành lý bị mất), the
+              lost property (tài sản bị mất) …Thỉnh thoảng “lost” còn được dùng như một tính từ.<br />
+              + Loss (N) : vật thất lạc, việc bị mất, tổn thất.<br />
+              Loss (N) : vật thất lạc, việc bị mất, tổn thất.
+              Trong đề thi TOEIC thường hay xuất hiện cụm từ như: be at a loss for words (quá ngạc nhiên, không thốt nên
+              lời), …<br />
+              - Unable – disabled<br />
+              + Unable (Adj) không thể, không có khả năng làm gì.<br />
+              Ví dụ: He’s unable to run the business.<br />
+              + Disabled (Adj) bị khuyết tật, tàn tật<br />
+              Ví dụ: Although she is disabled, she joins some sport competitions.<br />
+              - Rise – raise<br />
+              + Rise (tăng): Nội động từ, không có tân ngữ đằng sau.<br />
+              + Raise (tăng): ngoại động từ, luôn có tân ngữ đằng sau<br />
+              Ví dụ: Oil price has risen by 5% this year.<br />
+              The Government has raised oil prices by 5% this year.
+            </p>
+          </ol>
+          <li id="third">Những điều cần biết về Part 7</li>
+          <ol type="1">
+            <li class="big">Sơ lược về Part 7</li>
+            <p>
+              Đề thi TOEIC mới nhất thì trong Part 7 số lượng câu hỏi đã tăng thêm 8 câu và số bài đọc cũng tăng thêm
+              thông qua dạng double passage.<br />
+              Đặc điểm: Phần Part 7 – Reading Comprehension – Đọc hiểu bao gồm các đoạn đọc đơn và đoạn đọc kép. Phần
+              này không kiểm tra kiến thức ngữ pháp mà kiểm tra khả năng đọc hiểu. Người thi sẽ phải trả lời 29 câu
+              hỏi cho những đoạn đọc đơn và 25 câu hỏi cho 4 cặp đoạn đọc kép. Nội dung các bài đọc là những văn bản
+              trong môi trường công việc, giao dịch, cuộc sống hàng ngày: Quảng cáo, thư tín, tin tức, thông báo, báo
+              cáo, lịch trình và các loại văn bản giấy tờ khác.
+            </p>
+            <p>
+              Trong Part 7 được chia thành 3 dạng chính bài đọc:<br />
+              - Single passage: từ câu 147 -> câu 175<br />
+              - Double passage: từ câu 176 -> 185<br />
+              - Triple passage: từ câu 186 -> 200
+            </p>
+
+            <li class="big">Các loại câu hỏi trong Part 7</li>
+            <p>
+              Part 7 trong đề thi TOEIC hay còn được gọi với tên Text Completion có nghĩa là hoàn thành đoạn cũng
+              tương tự câu hỏi của Part 6. Đây là phần tiếp theo của Part 6 với nội dung câu hỏi tương tự, bạn sẽ
+              không bị bỡ ngỡ khi chuyển từ Part 5, 6 sang Part 7 này đâu.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">a. Dạng câu hỏi ngữ pháp ở Part 7 chủ yếu hay tập trung vào 3
+              chủ đề</p>
+            <p>
+              - Parts of speech (Từ loại)<br />
+              Dạng câu hỏi này bạn sẽ cần phải xác định được từ loại còn thiếu trong câu hoặc từ loại đứng trước hoặc
+              ngay sau từ trước đó và hoàn thành câu theo đúng cấu trúc ngữ pháp<br />
+              Ex: She often drives very ________ so she rarely causes accident.<br />
+              a. carefully <br />
+              b. careful<br />
+              c. caring<br />
+              d. Careless<br />
+              - Động từ (Verb-related)<br />
+              Với các dạng câu hỏi này, thường bạn sẽ cần phải xác định được cấu trúc câu, dấu hiệu nhận biết của câu,
+              thì của câu để bạn có thể chọn chia động từ theo dạng.<br />
+              Với phần chia động từ này, bạn cần lưu ý học thuộc bảng động từ bất quy tắc đặc biệt với các thì quá khứ
+              và tương lai nhé.<br />
+              Ex:How many languages_____ John speak?<br />
+              a. do<br />
+              B. does <br />
+              C. did<br />
+              D. will<br />
+              - Liên từ và giới từ (Prepositions & Conjunctions)<br />
+              Bạn cần lưu ý cách sử dụng, vị trí đặt của từng loại liên từ, giới từ để từ đó chọn đáp án chính
+              xác.<br />
+              Ex: He stops working _______ heavy raining.<br />
+              a. in spite of <br />
+              B. although<br />
+              C. despite <br />
+              D. because of<br />
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Loại hình đoạn văn thường xuất hiện trong Part 7</p>
+            <p>
+              Trong Part này, bạn cần tìm từ thích hợp để điền vào chỗ trống, nội dung phần này thường bao gồm các
+              loại văn bản như:
+            </p>
+            <p style="font-weight: 600; color: #a70ca4;">Loại 1. Quảng cáo</p>
+            <p>
+              Các mẫu quảng cáo nhỏ đề cập tới các nội dung quảng cáo sản phẩm, dịch vụ hoặc giới thiệu 1 thứ gì đó
+              tới người dùng. Bạn cần chú ý tới các nội dung trong đoạn như sau:<br />
+              - Bao nhiêu sản phẩm? chi tiết<br />
+              - Đoạn đang quảng cáo cái gì vậy? ý chính<br />
+              - Ai có thể sử dụng (sản phẩm)? suy luận<br />
+            </p>
+            <p style="font-weight: 600; color: #a70ca4;">Loại 2. Fax dành cho doanh nghiệp</p>
+            <p>
+              Nội dung các đoạn Fax được trao đổi với nhau trong nội dung công việc hoặc trao đổi thông tin giữa các
+              nhân viên với nhau, nội dung câu hỏi thường sẽ xoay quanh các nội dung:<br />
+              - Thời gian fax được gửi? chi tiết<br />
+              - Mục đích của lá thư là gì? ý chính<br />
+              - Mô hình của bản ghi nhớ là gì? suy luận<br />
+            </p>
+            <p style="font-weight: 600; color: #a70ca4;">Loại 3. Forms, biểu đồ và đồ thị</p>
+            <p>
+              Nếu câu hỏi đề cập tới các vấn đề về Form hay đồ thì thì bạn cần lưu ý các nội dung này nhé. Tuy nhiên,
+              đó chỉ là tỉ lệ cao chứ không phải 100% rơi vào các dấu hiệu này đâu bạn nhé.<br />
+              - Phần trăm của ...? chi tiết<br />
+              - Mục đích của biểu đồ hình tròn là gì? ý chính<br />
+              - Anh sẽ sử dụng thông tin? suy luận<br />
+            </p>
+            <p style="font-weight: 600; color: #a70ca4;">Loại 4. Các bài báo và báo cáo</p>
+            <p>
+              Các nội dung liên quan tới số liệu, bảng biểu và một vài thông tin báo cáo. Với các nội dung này thì bạn
+              cần chú ý tới các thông tin chính như sau:<br />
+              - Ngày nào là quan trọng? chi tiết<br />
+              - Ý tưởng chính của bài viết này là gì? ý chính<br />
+              - Ai có thể đọc báo cáo này? suy luận<br />
+            </p>
+            <p style="font-weight: 600; color: #a70ca4;">Loại 5. Thông báo và đoạn văn</p>
+            <p>
+              Các nội dung đoạn thông báo này khá đa dạng, tuy nhiên với các nội dung này vẫn có 1 vài nội dung chính
+              bạn cần chú ý hơn bao gồm:<br />
+              - Ai là (tên hay danh hiệu)? chi tiết<br />
+              - Thông báo về cái gì? ý chính<br />
+              - Ý kiến ​​của nhà văn là gì? Suy luận<br />
+            </p>
+            <li class="big">Tài liệu tham khảo cho TOEIC PART 7</li>
+            <p style="font-weight: 600; color: #004aaa;">a. Một số điều cần chuẩn bị thật tốt để thi Part 7</p>
+            <p>
+              - Ôn tập kỹ các loại câu hỏi đọc hiểu thường gặp trong các bài đọc để hiểu câu hỏi.<br />
+              - Nghiên cứu đặc điểm nội dung của từng loại bài đọc và thông tin được trình bày.<br />
+              - Thực hành chiến lược tìm thông tin cho câu hỏi ý chính.<br />
+              - Thực hành chiến lược tìm thông tin cho câu hỏi chi tiết.<br />
+              - Thực hành chiến lược tìm thông tin cho câu hỏi suy luận.<br />
+              - Thực hành chiến lược tìm thông tin cho câu hỏi từ vựng.
+            </p>
+            <p>
+              Lưu ý:
+            </p>
+            <p>
+              Thực hành dịch lại đoạn đọc, câu hỏi và các lựa chọn để hiểu sâu thêm về nội dung, ghi nhớ từ
+              vựng.<BR />
+              Thực hành kỹ năng tìm nhanh thông tin câu trả lời cho mỗi câu hỏi.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Một số tài liệu tham khảo</p>
+            <p>
+              - Cuốn ABC TOEIC Reading<br />
+              Cuốn sách được biên soạn với nội dung dành riêng cho những bạn mới bắt đầu nhằm giúp các bạn tăng kỹ
+              năng đọc hiểu trong bài thi TOEIC. Đồng thời, cuốn sách cũng cung cấp cho người đọc những kiến thức cơ
+              bản nhất về từ vựng, ngữ pháp và phương pháp đọc hiểu để người đọc sẵn sàng trong công cuộc chinh phục
+              Part 5, 6, 7 TOEIC cực hiệu quả.<br />
+              - Cuốn 1000 Reading Comprehension<br />
+              Cuốn sách này bao gồm 10 đề thi Reading bao gồm 3 Part 5, 6, 7. Các tình huống điền từ trong phần 5 khá
+              tổng quát, bao gồm hết các vấn đề trong bài thi TOEIC (từ loại, từ vựng, liên từ, đảo ngữ...)<br />
+              - Cuốn Longman New Real TOEIC<br />
+              Cuốn sách hướng tới các học viên có trình độ từ 750+ trở lên. Cuốn reading này gồm 1 Pre- Actual và 8
+              bài test về phần đọc, bạn có thể ôn luyện thật kỹ, ôn đến đâu chắc đến đẩy từng bài.<br />
+              - Cuốn Hacker TOEIC Reading<br />
+              Bộ sách này rất thích hợp để tự học TOEIC với lời giải chi tiết rõ ràng, giúp các bạn dễ phát hiện các
+              lỗi cơ bản trong phần TOEIC Reading. Hacker TOEIC gồm những dạng bài tổng hợp về reading giúp bạn có cái
+              nhìn tổng quan nhất.
+            </p>
+            <li class="big">Các mẹo và cách tránh bẫy trong PART 7</li>
+            <p style="font-weight: 600; color: #004aaa;">a. Cách tránh bẫy TOEIC PART 7</p>
+            <p>
+              - Xác định từ loại cần điền: Bạn nên đọc lướt đoạn cần điền và xem kĩ câu hỏi đang cần đáp án, xác định
+              từ loại đang thiếu trong câu để điền vào câu. Thông thường các dạng câu hỏi này bạn đôi khi không cần
+              dịch, tuy nhiên để cẩn thận hơn, bạn vẫn có thể suy đoán nghĩa của từ nhé.<br />
+              - Học các thì thường đi chung với nhau: Trong tiếng Anh có 1 số quy tắc riêng về vị trí của các từ loại
+              với nhau. Tuy nhiên, các bạn cần lưu ý những cụm từ thường đi kèm với nhau và không theo các quy tắc nên
+              bạn cần học thuộc những nhóm từ loại kiểu này nhé.<br />
+              - Lưu ý các dấu hiệu nhận biết của các thì trong câu: Hãy ghi nhớ thật kĩ những dấu hiệu nhận biết cơ
+              bản của các thì thường dùng, nhờ đó bạn có thể nhận diện các thì này nhanh chóng và đơn giản hơn
+              đó.<br />
+              - Phán đoán nhanh đáp án sai: Có những đáp án chắc chắn sai, sai khác biệt hẳn so với các đáp án khá.
+              Bạn có thể nhanh chóng loại bỏ những phương án này để tránh làm rối kết quả và thuận tiện hơn cho bạn
+              khi chọn đáp án đúng.
+            </p>
+            <p style="font-weight: 600; color: #004aaa;">b. Mẹo làm bài thi TOEIC PART 7</p>
+            <p>
+              - Tìm ý chính của đoạn văn<br />
+              Khi làm các bài thi đọc chúng ta không nên đọc toàn bộ bài luôn mà lúc nào chúng ta cũng cần đọc lướt qua
+              để nắm ý chính, bởi khi nắm ý chính chuẩn xác và trong lúc dịch cụ thể từng câu sẽ gần với ý của tác giả
+              nhất vì như chúng ta đã biết một từ vựng trong tiếng anh có rất nhiều nghĩa tùy từng hoàn cảnh nó sẽ có
+              những cách dịch khác nhau.<br />
+              - Phân biệt cách sử dụng của từ đồng nghĩa<br />
+              Để làm tốt được phần này thì vốn từ vựng của các bạn phải đa dạng và cần nắm vững nghĩa cũng như cách sử
+              dụng của những từ vựng đồng nghĩa. Nhiều từ đồng nghĩa chúng ta tưởng có thể thay thế được cho nhau nhưng
+              trong một số trường hợp chúng lại phải được phân biệt cách sử dụng. Theo mỗi ngữ cảnh, văn cảnh khác nhau
+              chúng ta sẽ sử dụng từ vựng khác nhau.<br />
+              - Nắm vững cấu trúc của bài đọc và trả lời những câu hỏi liên quan<br />
+              Nếu muốn đạt điểm cao trong Part 7 Reading Comprehension thì đây là lời khuyên rất hữu hiệu nhất của phần
+              đọc hiểu. Trong phần này các bạn sẽ phải làm quen với rất nhiều bài đọc được lấy từ: thư tín, quảng cáo,
+              thông báo, thư báo,... Để làm tốt phần này, các bạn hãy xác định loại bài đọc từ đó cố gắng hình thành
+              những ý tưởng có thể xảy ra của từng bài.<br />
+              - Hãy cố gắng trả lời câu hỏi "who, what, where, when" liên quan đến bài đọc.<br />
+              Khi bạn gặp bất cứ một bài đọc nào, hãy cố gắng trả lời những câu hỏi liên quan đến nó để bạn có thể dễ
+              dàng tìm thông tin trong phần câu hỏi và câu trả lời. Ví dụ bạn hãy thử liệt kê xem : Những ai liên quan
+              đến đoạn văn này? Bài đọc này nói về vấn đề gì? Đoạn văn này xảy ra ở đâu/khi nào?<br />
+              Một lưu ý nữa là nếu các bạn sợ bị mất tập trung ở cuối giờ thì nên làm Part 7 TOEIC trước, vì phần này
+              cũng cần có tinh thần làm bài tập trung cao đội. Nếu có tâm trạng phấn chấn và bình tĩnh thì thí sinh có
+              thể làm các phần khác một cách tự tin và cảm thấy dễ dàng hơn.<br />
+              Lưu ý thì của các câu: Bạn cần chú ý các dấu hiệu của thì là các trạng từ (yet,since,already, soon…) để
+              nhanh chóng định hình được thì nào mà không cần phải dịch nghĩa cả câu<br />
+              Xác định loại từ cần điền: khi đọc câu hỏi về từ loại thì bạn nhanh cho1nh tìm ngay nó cần danh từ, động
+              từ, trạng từ hay tính từ rồi tìm đáp án. Thường bạn không cần phải dịch cả câu<br />
+              Học các cụm từ (collocation): bạn nên học một danh từ hay động từ đi với giới từ nào<br />
+              Ví dụ:<br />
+              Đúng: Jealous of somebody<br />
+              Sai: Jealous with somebody<br />
+              Xác định thứ tự làm bài hợp lý<br />
+              Đọc hiểu nhanh câu hỏi và rèn kỹ năng đọc lướt (Skim & Scan)<br />
+              Dùng ngữ cảnh để trả lời những câu hỏi về từ vựng hoặc về ý chính của bài<br />
+              Tìm thông tin kỹ và không kết luận quá vội vàng
+            </p>
+          </ol>
+      </div>
+    </div>
+
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="img/ads-reading.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a href="https://luyenthitoeic.edu.vn/thu-vien/bi-kip-on-luyen-toeic-reading-hieu-qua.html">5
+              Bí kíp ôn luyện TOEIC Reading hiệu quả</a>
+          </li>
+          <li>
+            <a
+              href="https://toeic.mobiedu.vn/news/phuong-phap-luyen-toeic-reading-hieu-qua-tiet-kiem-thoi-gian/59.html">Phương
+              pháp luyện TOEIC Reading hiệu quả,<br /> tiết kiệm thời gian</a>
+          </li>
+          <li>
+            <a href="https://zim.vn/cac-nguon-doc-giup-cai-thien-ky-nang-toeic-reading">Các nguồn đọc giúp cải thiện kỹ
+              năng TOEIC<br /> Reading hiệu quả nhất</a>
+          </li>
+          <li>
+            <a href="https://tienganhmoingay.com/huong-dan/huong-dan-cai-thien-phan-doc-toeic/">Hướng dẫn cải thiện phần
+              đọc TOEIC</a>
+          </li>
+          <li>
+            <a href="https://edusa.vn/chien-thuat-hoc-reading-toeic-sao-cho-hieu-qua-nhat/">Chiến thuật luyện thi Toeic
+              Reading sao cho<br /> hiệu quả nhất
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Hy vọng những kinh nghiệm này sẽ giúp bạn chuẩn bị tốt cho kỳ thi TOEIC và đạt được điểm số mong muốn. Chúc bạn sẽ
+      có một hành trình ôn luyện thật tốt và đạt được target mà mình mong muốn nhé! <br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <p><img src="img/logo.png" alt="Blue★"></p>
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="#">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>

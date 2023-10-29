@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    /> -->
+  <title>WRITING</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      WRITING
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/office-worker-different-emotions-activities-young-man-sitting-desk-work-laptop-eating-lunch-sleeping-rejoice-angry-expression-manager-lifestyle-linear-flat-vector-illustration_107791-11728.jpg?w=1380&t=st=1698351472~exp=1698352072~hmac=a112f864f60001b679bf30f0b9eb9aa980bd4330eced5443afa7bbfadb11b7ff"
+      width="80%" height="200px" />
+    <p class="des">
+      Phần thi Writing trong bài thi TOEIC là một phần quan trọng để đánh giá khả năng viết bằng tiếng Anh của thí sinh.
+      Trong phần này, thí sinh sẽ đối diện với một tình huống thực tế trong môi trường làm việc quốc tế và được yêu cầu
+      viết một email hoặc bài luận ngắn về một chủ đề cụ thể. Mục tiêu của phần thi là đánh giá khả năng thuyết phục,
+      thông báo, yêu cầu hoặc giải quyết vấn đề bằng cách sử dụng tiếng Anh một cách hiệu quả.
+    </p>
+    <span class="hidden-menu" onclick="openNav()"><i class="bi bi-list" style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Cấu trúc phần Writing</a></li>
+      <li><a href="#second">Từ vựng từ cơ bản đến nâng cao theo chủ đề:</a></li>
+      <li><a href="#third">Cách học ngữ pháp hiệu quả</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Cấu trúc phần Writing</li>
+          <ol class="bigger" type="1">
+            <li class="big">Part 1 - Write a sentence based on a picture (Viết câu mô tả tranh) </li>
+            <p>Số câu: 5 câu.<br>
+              Trong phần 1 của TOEIC Writing, ngữ pháp và sự liên quan của câu trả lời đến bức tranh là hai tiêu chí
+              quan trọng trong việc đánh giá điểm số. Thí sinh cần sử dụng ngữ pháp chính xác và diễn đạt ý tưởng một
+              cách liên quan và phù hợp với nội dung của bức tranh.<br>
+              - Ngữ pháp (Grammar): Tiêu chí ngữ pháp đánh giá mức độ sử dụng ngữ pháp chính xác trong câu trả lời. Thí
+              sinh cần chú ý đến các yếu tố như cấu trúc câu, thì động từ, danh từ, các loại từ (tính từ, trạng từ), mạo
+              từ, đại từ và các mẫu câu ngữ pháp khác.<br>
+              - Đúng ngữ pháp: Câu trả lời nên tuân thủ các quy tắc ngữ pháp cơ bản. Ví dụ, sử dụng đúng thì động từ,
+              đặt đại từ đúng vị trí và hợp lý, sử dụng các cấu trúc câu phù hợp như câu điều kiện, câu bị động, câu so
+              sánh, và câu đảo ngữ một cách chính xác.<br>
+              - Từ vựng chính xác: Câu trả lời nên sử dụng từ vựng phù hợp và chính xác và chắc chắn câu trả lời phải có
+              chưa từ vựng được gợi ý. Thí sinh cần chú ý đến việc sử dụng từ ngữ đúng ý nghĩa, không sử dụng từ sai
+              hoặc không phù hợp với ngữ cảnh.<br>
+              <br>
+              Sự liên quan giữa các câu với những bức tranh (Relevance of the sentences to the pictures): Tiêu chí này
+              đánh giá mức độ sự tương quan giữa câu trả lời và bức tranh. Câu trả lời nên liên quan một cách rõ ràng và
+              chính xác đến nội dung của bức tranh được cung cấp.<br>
+              - Mô tả đúng: Câu trả lời nên mô tả đúng nội dung của bức tranh. Thí sinh cần sử dụng các từ ngữ, cụm từ
+              hoặc cấu trúc câu thích hợp để diễn đạt các yếu tố trong bức tranh một cách chính xác.<br>
+              - Ý tưởng phù hợp: Câu trả lời nên diễn đạt ý tưởng phù hợp với bức tranh. Thí sinh có thể tạo ra câu trả
+              lời sáng tạo, nhưng vẫn phải liên quan chặt chẽ đến hình ảnh được cung cấp.<br>
+              - Sự phù hợp ngữ cảnh: Thí sinh cần hiểu rõ mục đích của bức tranh và sử dụng câu trả lời để diễn đạt
+              thông điệp phù hợp với tình huống.<br>
+            </p>
+            <li class="big">Part 2 - Respond to a writtin request (Phản hồi lại yêu cầu)</li>
+            <p>Số câu: 2 câu.<br>
+
+              Trong phần 2 của TOEIC Writing, chất lượng và sự đa dạng của câu trả lời, từ vựng và cách tổ chức là ba
+              tiêu chí quan trọng trong việc đánh giá điểm số. Thí sinh cần sử dụng câu văn chất lượng và đa dạng, sử
+              dụng từ vựng phù hợp và đa dạng, và tổ chức câu trả lời một cách logic và có cấu trúc rõ ràng để truyền
+              đạt ý kiến và thông tin một cách hiệu quả.<br>
+              <br>
+              Chất lượng và sự đa dạng của câu trả lời (Quality and variety of sentences): Thí sinh cần chú trọng vào
+              việc sử dụng câu văn chất lượng, đa dạng và sáng tạo để truyền đạt ý kiến và thông tin một cách hiệu
+              quả.<br>
+              - Câu văn chính xác và rõ ràng: Câu trả lời nên được viết một cách chính xác và dễ hiểu. Thí sinh cần
+              tránh sử dụng câu văn mập mờ hoặc không rõ ràng, và chú trọng vào việc truyền đạt ý kiến một cách rõ ràng
+              và xúc tích.<br>
+              - Đa dạng câu văn: Câu trả lời nên sử dụng đa dạng các mẫu câu và cấu trúc câu khác nhau. Sử dụng các câu
+              ngắn, câu dài, câu đơn, câu phức và câu ghép để tạo ra hiệu ứng ngôn ngữ và truyền đạt ý kiến một cách đa
+              dạng.<br>
+              - Sự sáng tạo: Câu trả lời nên thể hiện sự sáng tạo trong việc sử dụng ngôn ngữ và diễn đạt ý kiến. Thí
+              sinh có thể sử dụng các từ đồng nghĩa, biểu đạt ý nghĩa một cách khác biệt hoặc sử dụng các câu văn có
+              tính mỹ thuật để làm nổi bật câu trả lời của mình.<br>
+              Từ vựng (Vocabulary): Tiêu chí từ vựng đánh giá mức độ sử dụng từ vựng phù hợp và đa dạng để truyền đạt ý
+              kiến và thông tin trong câu trả lời.<br>
+              <br>
+              - Từ vựng phù hợp: Câu trả lời nên sử dụng từ ngữ phù hợp với ngữ cảnh và yêu cầu của câu hỏi. Thí sinh
+              cần lựa chọn các từ ngữ có ý nghĩa chính xác và sử dụng chúng một cách đúng đắn.<br>
+              - Đa dạng từ vựng: Câu trả lời nên sử dụng đa dạng từ vựng, bao gồm cả từ vựng cơ bản và từ vựng nâng cao.
+              Thí sinh có thể sử dụng các từ đồng nghĩa, từ ngữ liên quan và các cụm từ idiom để truyền đạt ý kiến một
+              cách phong phú và linh hoạt.<br>
+              Cách tổ chức (Organization): Tiêu chí này đánh giá mức độ tổ chức và cấu trúc của câu trả lời. Câu trả lời
+              nên được tổ chức một cách logic và có cấu trúc rõ ràng để diễn đạt ý kiến và thông tin một cách hiệu
+              quả.<br>
+              - Cấu trúc câu và đoạn văn: Câu trả lời nên có cấu trúc câu và đoạn văn rõ ràng. Thí sinh cần chú trọng
+              vào việc sắp xếp ý kiến và thông tin theo một cấu trúc logic, bao gồm câu mở đầu, phần thân câu và câu kết
+              luận.<br>
+              - Sự liên kết logic: Thí sinh nên sử dụng các từ nối, từ trạng từ và cấu trúc câu phù hợp để tạo ra một
+              luồng suy nghĩ liền mạch và dễ theo dõi.<br>
+              - Sự sắp xếp hợp lý: Thí sinh cần chú trọng vào việc sắp xếp các ý kiến theo trật tự ưu tiên và sắp xếp
+              các thông tin theo một cấu trúc có tính logic.<br>
+
+            </p>
+            <li class="big">Part 3 - Write an opinion essay (Viết luận trình bày quan điểm) </li>
+            <p>Số câu: 1 câu.<br>
+              Trong Phần 3 của bài thi TOEIC Writing, thí sinh cần chú trọng vào việc bảo vệ quan điểm bằng lí do và ví
+              dụ cụ thể, sử dụng ngữ pháp chính xác và linh hoạt, sử dụng từ vựng phù hợp và đa dạng, và tổ chức câu trả
+              lời một cách rõ ràng và có logic.<br>
+              <br>
+              Quan điểm của thí sinh có được bảo vệ và chứng minh bởi những lí do và ví dụ hay không (Whether your
+              opinion is supported with reasons and/or examples): Tiêu chí này đánh giá khả năng của thí sinh trong việc
+              bảo vệ quan điểm của mình. Thí sinh cần chú trọng vào việc trình bày các lập luận logic và cung cấp các ví
+              dụ, thông tin để minh chứng quan điểm của mình.<br>
+              Lập luận logic: Câu trả lời nên có các lập luận logic và hợp lý để bảo vệ quan điểm. Thí sinh có thể sử
+              dụng các lập luận logic như nguyên nhân - kết quả, so sánh, hoặc phân tích để minh chứng cho quan điểm của
+              mình.<br>
+              Ví dụ cụ thể: Câu trả lời nên đi kèm với các ví dụ cụ thể để minh chứng cho quan điểm. Thí sinh có thể sử
+              dụng ví dụ từ cuộc sống hàng ngày, kinh nghiệm cá nhân hoặc các ví dụ từ các tài liệu, nghiên cứu để làm
+              rõ quan điểm của mình.<br>
+              <br>
+              Ngữ pháp (Grammar): Tiêu chí ngữ pháp đánh giá khả năng của thí sinh trong việc sử dụng các quy tắc ngữ
+              pháp chính xác và linh hoạt để diễn đạt ý kiến và thông tin trong câu trả lời.<br>
+              - Sử dụng đúng quy tắc ngữ pháp: Câu trả lời nên sử dụng các quy tắc ngữ pháp chính xác, bao gồm cấu trúc
+              câu, thì trong câu, danh từ, động từ, tính từ, trạng từ, và cấu trúc câu phức.<br>
+              - Đa dạng câu: Câu trả lời nên sử dụng đa dạng cấu trúc câu và thể ngữ pháp để tạo ra sự linh hoạt và sáng
+              tạo trong việc diễn đạt ý kiến. Thí sinh cần tránh sử dụng câu văn đơn điệu và lặp lại mẫu câu.<br>
+              <br>
+              Từ vựng (Vocabulary): Tiêu chí từ vựng đánh giá khả năng của thí sinh trong việc sử dụng từ ngữ phù hợp và
+              đa dạng để truyền đạt ý kiến và thông tin trong câu trả lời.<br>
+              - Từ vựng phù hợp: Thí sinh cần lựa chọn các từ ngữ có ý nghĩa chính xác và sử dụng chúng một cách đúng
+              đắn.<br>
+              - Đa dạng từ vựng: Thí sinh có thể sử dụng các từ đồng nghĩa, từ ngữ liên quan và các cụm từ idiom để
+              truyền đạt ý kiến một cách phong phú và linh hoạt.<br>
+              <br>
+              Cách tổ chức (Organization): Tiêu chí này đánh giá mức độ tổ chức và cấu trúc của câu trả lời. Câu trả lời
+              nên được tổ chức một cách rõ ràng và có một sự liên kết logic giữa các ý kiến và thông tin.<br>
+              - Liên kết ý: Câu trả lời nên có sự liên kết logic giữa các ý kiến và thông tin. Thí sinh có thể sử dụng
+              các từ nối (linking words) để tạo ra sự mạch lạc và logic trong cấu trúc câu.<br>
+              - Sắp xếp ý kiến: Câu trả lời nên được tổ chức một cách có hệ thống và logic. Thí sinh có thể sử dụng cấu
+              trúc đoạn văn, như đoạn mở đầu (introduction), các đoạn thân (body paragraphs) và đoạn kết luận
+              (conclusion), để tạo ra sự rõ ràng và dễ hiểu trong cách tổ chức ý kiến.
+            </p>
+          </ol>
+          <li id="second">Từ vựng từ cơ bản đến nâng cao theo chủ đề</li>
+          <p>Bạn đã lên kế hoạch xây dựng một danh sách từ vựng tiếng Anh và bắt đầu học chúng? Bạn cũng tốn không ít
+            thời gian đầu tư vào những bộ flashcard tiếng Anh? Tuy nhiên khi nói hay viết, những từ vựng tiếng Anh mà
+            bạn học được dường như không hề tồn tại trong đầu. Vậy làm thế nào để bạn cải thiện vấn đề này và liệu có
+            cách học nào tốt hơn không? Einil Kandybovich - giáo viên tiếng Anh tại Hội đồng Anh bật mí cho bạn mười
+            cách giúp bạn học từ vựng tiếng Anh hiệu quả trong bài viết sau.</p>
+          <ol type="1">
+            <li class="big">Không có từ vựng ngẫu nhiên
+            </li>
+            <p>
+              Não bộ chúng ta thường ghi nhớ những gì có liên quan đến bản thân. Vì vậy, việc lập ra một danh sách hoặc
+              bộ flashcard từ vựng tiếng Anh ngẫu nhiên sẽ không phải là cách học hiệu quả để ghi nhớ và sử dụng các từ
+              đó. Cho nên, cách tốt nhất để ghi nhớ một từ mới trong đầu là hãy thử liên kết nó với một cái gì đó có ý
+              nghĩa với bản thân. Nghĩa là bạn sẽ đặt từ vựng ấy vào trong ngữ cảnh cụ thể mà bạn cảm thấy thú vị hoặc
+              gắn liền với sở thích.<br>
+              Ví dụ: nếu bạn là người hâm mộ bóng đá, bạn sẽ dễ dàng ghi nhớ từ “unstoppable” trong một câu cụ thể,
+              chẳng hạn như: “Messi is unstoppable”, thay vì chỉ ghi nhớ nó như một từ đơn lẻ hoặc trong một câu chung
+              chung như: "Some people are unstoppable".<br>
+              Một gợi ý nho nhỏ dành cho bạn là trang web LearnEnglish của Hội đồng Anh có rất nhiều video, trò chơi,
+              podcast tương tác chứa đựng nhiều chủ đề khác nhau, bạn có thể truy cập vào đây và chọn những chủ đề mà
+              bạn đang quan tâm và bắt đầu học từ vựng. Đặc biệt, website này còn có các khung thảo luận theo các hoạt
+              động giúp bạn chia sẻ ý tưởng của mình với những người học khác.
+            </p>
+            <li class="big">Học từ vựng qua các đoạn văn hoặc kịch bản</li>
+            <p>
+              Chúng ta sẽ ghi nhớ từ vựng tốt hơn khi học theo từng phần nhỏ (các đoạn văn nhỏ được xây dựng bởi một vài
+              từ vựng) và kịch bản (các cuộc hội thoại). Ví dụ, thay vì ghi nhớ cụm động từ “to come up with”, bạn hãy
+              ghi nhớ cả cụm “to come up with an idea”. Bằng cách này, bạn sẽ chắc chắn mình biết cách sử dụng động từ
+              “to come up with” trong ít nhất một câu. Tương tự, thay vì ghi nhớ 33 cách nói xin chào, hãy học nó trong
+              một kịch bản, chẳng hạn như: “Hello, how are you? – I’m fine, thank you”. <br>
+              Bạn có thể dễ dàng tìm thấy các kịch bản hay đoạn văn ngắn trong những video, phim ảnh trên internet. Tuy
+              nhiên, nếu bạn cần sự tương tác trong lúc học để tăng khả năng ghi nhớ, bạn có thể truy cập vào các ứng
+              dụng học tiếng Anh của Hội đồng Anh và lựa chọn cho mình nguồn học liệu thú vị với nhiều hình thức học tập
+              đa dạng như: học bằng video, hình ảnh, những mẩu truyện ngắn, thậm chí là học nghe trong khi đọc v.v…
+            </p>
+            <li class="big">Sử dụng giọng nói thầm trong bạn</li>
+            <p>Học tập thực chất là một quá trình nội bộ, vì vậy để học một từ vựng mới, bạn cần đi vào thế giới của
+              giọng nói bên trong bạn. Hãy thử làm như sau: nghe một từ hoặc cụm từ tiếng Anh một lần. Sau đó, hãy nhắm
+              mắt lại và lắng nghe từ đó trong đầu bạn. Tiếp theo, hãy để từ vựng ấy được vang lên trong đầu bạn thêm
+              vài lần nữa. Cuối cùng, bạn hãy đọc to từ vựng ấy lên và ghi âm lại.<br>
+              Forvo hứa hẹn sẽ là một trang web thú vị dành cho bạn khi học từ vựng tiếng Anh theo cách này. Bạn chỉ cần
+              gõ từ vựng vào ô tìm kiếm, kết quả trả về là bạn có thể nghe nhiều giọng bản ngữ khác nhau cùng phát âm về
+              từ vựng đó, thậm chí là từ vựng bạn tìm kiếm còn được đặt vào những bối cảnh cụ thể để bạn hiểu thêm về
+              cách sử dụng.</p>
+            <li class="big">Hình dung từ hoặc cụm từ trông như thế nào</li>
+            <p>
+              Hãy vẽ định nghĩa của từ vựng ra giấy hoặc trong trí tưởng tượng của bạn, điều này sẽ giúp bạn gợi nhớ lại
+              ý nghĩa của từ vựng đó bất cứ khi nào bạn nghe thấy. Phương pháp này còn hoạt động tốt với các thành ngữ
+              tiếng Anh, ví dụ như: “to keep one’s mouth shut”, có nghĩa là, “to not talk about something”. Ngoài ra,
+              bạn có thể kết hợp cách học này với từ điển để xem thêm những từ liên kết hoặc từ đồng nghĩa với từ vựng
+              mà bạn đang học và ghi nhớ chúng bằng cách tương tự.
+            </p>
+            <li class="big"> Dùng trí tưởng tượng để đơn giản hóa từ vựng (Mnemonics)</li>
+            <p>
+              Cố gắng tạo ra một cụm từ hoặc câu chuyện hài hước sẽ tăng cường kết nối giữa từ vựng và nghĩa của nó
+              (phương pháp mnemonic). Bạn thấy kỹ thuật này đặc biệt hiệu quả khi bạn cần nhớ lại những từ vựng tiếng
+              Anh khó đánh vần.<br>
+              Dưới đây là vài gợi ý hóm hỉnh dành cho bạn:<br>
+              career – car and beer<br>
+              island – is land
+            </p>
+          </ol>
+          <li id="third">Cách học ngữ pháp hiệu quả</li>
+          <P>-<strong> Ôn luyện các thì tiếng Anh:</strong>Dù bạn có học các nội dung gì hay kiến thức nào khác thì vẫn
+            cần nắm rõ các thì trong tiếng Anh là gì. Do đó, hãy bắt đầu ngay với việc tìm hiểu về các thì và rèn luyện
+            cách áp dụng thật tốt rồi mới sang các loại cấu trúc tiếp theo.
+            Dưới đây là bảng tổng hợp các thì tiếng Anh cơ bản mà bạn cần nắm khi mới bắt đầu:
+          <div class="img-wrapper"><img src="https://i.pinimg.com/564x/84/ec/f7/84ecf7bd101fa3899c88999e9417ebfb.jpg"
+              alt="" width="80%" height="80%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          - <strong>Nắm vững loại từ trước khi học ngữ pháp:</strong> Để học được ngữ pháp một cách dễ dàng yêu cầu bạn
+          phải có vốn từ vựng tốt. Học tiếng Anh cũng giống với việc học tiếng Việt vậy. Đầu tiên, bạn cần phải biết đâu
+          là danh từ, động từ, tính từ, giới từ hay trạng từ… Qua đó, bạn mới biết được cách dùng và vị trí của từng
+          loại từ này.
+          <div class="img-wrapper"><img src="https://i.pinimg.com/564x/76/46/98/7646982d69b8333d9018eec1cc2deb8b.jpg"
+              alt="" width="80%" height="80%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          - <strong> Học và luyện tập sử dụng ngữ pháp từ các câu mẫu: </strong>Khi đã nắm vững được các ngữ pháp tiếng
+          Anh cơ bản như các thì, các loại từ,… thì bạn hãy nâng cao trình độ ngữ pháp của mình bằng cách thực hành viết
+          câu nhiều hơn. Ngoài ra, qua việc luyện tập viết câu, bạn còn có thể học thêm nhiều cấu trúc ngữ pháp mới. Khi
+          thực hành, bạn phải đọc và hiểu cấu trúc ngữ pháp mà câu đó đang sử dụng. Tuy nhiên, lưu ý khi học phần này là
+          hãy suy luận về các chủ đề liên quan đến câu. Đồng thời, bạn cũng cần biết cách sử dụng câu ghép, các thì,
+          điều kiện hay các giả định,… của câu phức.<br>
+          - <strong>Học ngữ pháp tiếng Anh cấp tốc thông qua phần mềm, website: </strong> Sử dụng phần mềm để học tiếng
+          Anh cũng là cách cấp tốc giúp bạn nhanh nắm được các kiến thức ngữ pháp tiếng Anh. Với phần mềm này, bạn có
+          thể vừa chơi vừa học. Đồng thời, các phần mềm, website tiếng Anh còn giúp bạn ghi nhớ từ vựng, học cách phát
+          âm cũng như cấu trúc câu. Tuy nhiên, để đem lại hiệu quả thì đòi hỏi bạn tự giác học hàng ngày chứ không phải
+          tải về để mặc nó. Sau đây, Trung tâm Anh ngữ ISE xin gửi đến các bạn một số website, phần mềm chuyên dùng:
+          <div class="btnets">
+            <button class="btn-dload">
+              <a href="https://www.englishgrammar.org/">
+                English Grammar</a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://www.usingenglish.com/">
+                Using English </a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://learnenglish.britishcouncil.org/">
+                Learn English</a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://vi.duolingo.com/">
+                Doulingo</a>
+            </button>
+          </div>
+          - <Strong>Cách học ngữ pháp tiếng Anh hiệu quả qua sách, truyện: </Strong> Việc học ngữ pháp qua sách, truyện
+          sẽ giúp bạn cảm thấy bớt nhàm chán và khô cứng khi học tiếng Anh. Đơn giản là hãy kiếm cho mình những cuốn
+          sách báo, truyện thiếu nhi hoặc truyện cười song ngữ để vừa giải trí mà vừa tiếp thu kiến thức. Cách học ngữ
+          pháp tiếng Anh cấp tốc này sẽ giúp bạn nhớ lâu hơn các cấu trúc thường hay sử dụng. Bên cạnh đó, nếu gặp câu
+          khó, bạn có có thể note lại để tìm hiểu chi tiết hơn.<br>
+          - <strong>Ôn tập ngữ pháp đều đặn hàng ngày: </strong> Lên lịch ôn tập tiếng Anh hàng ngày nhằm tạo thói quen
+          học cho bạn để áp dụng ngữ pháp một cách nhuần nhuyễn nhất. Hơn nữa, đặc điểm của môn học này là khi bạn bỏ
+          quên nó, nó cũng sẽ quên bạn. Chỉ cần không ôn tập, não bộ của bạn sẽ dần quên đi cấu trúc, từ vựng đã học hôm
+          trước.
+          Chẳng hạn: Tuần thứ 1, bạn học về thì hiện tại. Tuần thứ 2 học về quá khứ và ôn lại kiến thức tuần 1.
+          Hơn nữa, sau khi đã lên thời khóa biểu, bạn cũng cần đặt ra mục tiêu cho bản thân. Ví dụ, bạn phải nắm được
+          hết các thì tiếng Anh trong 2 tuần. Việc đặt mục tiêu như vậy sẽ giúp bạn có động lực và hướng phấn đấu tốt
+          hơn.
+
+          </P>
+        </ol>
+      </div>
+    </div>
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="https://i.pinimg.com/originals/6c/45/81/6c4581b07e9e04c3b9ba235b803ef9b7.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a href="https://tienganhmoingay.com/phan-tich-de-thi-toeic/">Chiến lược làm các phần của đề thi TOEIC</a>
+          </li>
+          <li>
+            <a href="https://mochidemy.com/blog/top-5-kenh-luyen-nghe-toeic-hieu-qua-nhat/">Top 5 kênh luyện nghe TOEIC
+              hiệu quả nhất</a>
+          </li>
+          <li>
+            <a
+              href="https://www.anhngumshoa.com/tin-tuc/kinh-nghiem-phan-chia-thoi-gian-lam-bai-thi-toeic-hop-ly-nhat-38059.html">Kinh
+              nghiệm phân chia thời gian làm bài thi <br> TOEIC hợp lí nhất</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Hy vọng những kinh nghiệm này sẽ giúp bạn chuẩn bị tốt cho kỳ thi TOEIC và đạt được điểm số mong muốn. Hãy nhớ
+      rằng, việc cải thiện mỗi kỹ năng đều đòi hỏi sự kiên nhẫn và thực hành thường xuyên. Chúc bạn thành công trong
+      hành
+      trình học tiếng Anh và ôn thi TOEIC<br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <img src="img/logo.png" alt="Blue★">
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Ticket</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="index.html">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>

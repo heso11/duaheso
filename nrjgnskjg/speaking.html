@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPEAKING</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      SPEAKING
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/people-say-hello-different-languages_107791-13415.jpg?w=1380&t=st=1698343867~exp=1698344467~hmac=5162e2d15d4e061e74f371610d81bdc79bb27a84111e90662eb3d68631e34eb0"
+      width="80%" height="200px" />
+    <p class="des">
+      TOEIC Speaking không chỉ đánh giá khả năng giao tiếp bằng tiếng Anh mà còn đòi hỏi thí sinh phải kết hợp nhanh
+      chóng các kỹ năng lắng nghe, hiểu, và phản ứng trong một thời gian ngắn. Phần này thường thách thức người thi bởi
+      sự gắn kết và khả năng sáng tạo cần thiết để nói một cách tự nhiên và tự tin. Điều này đặt ra một yêu cầu cao về
+      sự hiểu biết sâu rộng về từ vựng và ngữ pháp, khả năng lựa chọn từ ngữ thích hợp, và sự tự tin trong việc phát âm
+      và diễn đạt.
+      Cần lưu ý rằng khả năng nói là một phần quan trọng trong việc sử dụng ngôn ngữ một cách thực tế trong cuộc sống
+      hàng ngày.
+      Điều này đặc biệt quan trọng khi bạn đang xin việc, tham gia các cuộc họp quốc tế, hoặc tương tác với đồng nghiệp
+      và đối tác kinh doanh.
+      Vì vậy, TOEIC Speaking không chỉ đánh giá kỹ năng thi cử mà còn phản ánh khả năng sử dụng tiếng Anh trong môi
+      trường làm việc và giao tiếp hàng ngày.
+      Thành công trong TOEIC Speaking đồng nghĩa với việc bạn có thể tự tin và hiệu quả trong các tình huống thực tế
+      ngoài đời.
+    </p>
+    <span class="hidden-menu" onclick="openNav()"><i class="bi bi-list" style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Cấu trúc phần Speaking</a></li>
+      <li><a href="#second">Một số cách giúp bạn ôn luyện kỹ năng nói</a></li>
+      <li><a href="#third">Một số tip giúp điểm của bạn cao hơn</a></li>
+      <li><a href="#fourth">Một số lưu ý khi làm bài thi nói TOEIC</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Cấu trúc phần Speaking</li>
+          <div class="img-wrapper"><img src="img/readingpic.png" alt="" width="50%" height="50%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <ol class="bigger" type="1">
+            <li class="big">Part 1: Reading a Text Aloud ( Đọc lớn một đoạn văn)</li>
+            <p>Số câu: 2 câu.<br>
+              Bạn sẽ phải đọc lớn một đoạn văn xuất hiện trên màn hình<br>
+              – Thời gian chuẩn bị là 45 giây (cho cà 2 câu).<br>
+              – Tiếp đó, bạn có thêm 45 giây để đọc đoạn văn bản.
+            </p>
+            <li class="big">Part 2: Describe a picture (Miêu tả một bức tranh)</li>
+            <p>Số câu: 1 câu.<br>
+              Bạn sẽ phải mô tả hình ảnh xuất hiện trên màn hình một cách chi tiết nhất có thể.<br>
+              – Thời gian chuẩn bị là 45 giây.<br>
+
+              – Thời gian mô tả bức ảnh là 30 giây
+            </p>
+            <li class="big">Part 3: Response to questions (Trả lời câu hỏi)</li>
+            <p>Số câu: 3 câu.<br>
+              Bạn sẽ trả lời 3 câu hỏi.<br>
+              – Đối với mỗi câu hỏi bạn sẽ có 3 giây để chuẩn bị.<br>
+
+              – Với câu hỏi số 5 và 6, thời gian trả lời sẽ là 15 giây.<br>
+
+              – Với câu hỏi số 7, thời gian trả lời là 30 giây.
+            </p>
+            <li class="big">Part 4: Response to questions using information provided (Trả lời câu hỏi với các thông tin
+              được cho sẵn)</li>
+            <p>Số câu: 3 câu.</p>
+            <p>Bạn sẽ trả lời 3 câu hỏi dựa trên thông tin có sẵn.<br>
+              – Tiếp đến, bạn có 45 giây để đọc thông tin trước khi bắt đầu trả lời câu hỏi.<br>
+
+              – Thời gian chuẩn bị là 3 giây cho mỗi câu hỏi.<br>
+
+              – Với câu hỏi số 8 và 9, bạn cần trả lời trong vòng 15 giây.<br>
+
+              – Với câu hỏi số 10, thời gian trả lời là 30 giây.</p>
+            <li class="big">Part 5: Express the opinion (Bày tỏ ý kiến, quan điểm)</li>
+            <p>Bạn cần nêu ý kiến về một chủ đề cụ thể nào đó.<br>
+              – Thời gian chuẩn bị là 30 giây.<br>
+
+              – Thời gian trả lời là 60 giây.
+            </p>
+          </ol>
+          <li id="second">Một số cách giúp bạn ôn luyện kỹ năng nói</li>
+          <div class="img-wrapper"><img src="img/way-speak.jpg" alt="" width="50%" height="50%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <p>
+            Dưới đây là một số lưu ý quan trọng để làm phần thi TOEIC Speaking hiệu quả:<br>
+
+            - <Strong>Luyện tập làm quen với thời gian giới hạn:</Strong> Mỗi phần trong TOEIC Speaking có thời gian
+            giới hạn, vì vậy hãy luyện tập để làm quen với việc nói trong khoảng thời gian ngắn.<br>
+
+            - <strong>Tập trung vào lắng nghe và hiểu nội dung:</strong> Phần 3 của TOEIC Speaking yêu cầu bạn lắng nghe
+            bài hội thoại rồi trả lời câu hỏi. Hãy tập trung vào việc hiểu rõ nội dung của bài nghe để có thể trả lời
+            một cách chính xác.<br>
+
+            - <strong>Tạo câu trả lời cơ bản trước:</strong> Trong Phần 2, bạn sẽ phải mô tả một hình ảnh. Hãy thử tạo
+            ra một câu trả lời cơ bản cho một loạt các tình huống hoặc hình ảnh khác nhau để bạn có thể sử dụng một cách
+            linh hoạt.<br>
+
+            - <strong>Luyện tập phát âm và diễn đạt:</strong> TOEIC Speaking đánh giá khả năng phát âm và diễn đạt của
+            bạn. Luyện tập cách phát âm từng âm, cụm từ và câu hoặc ghi âm và tự kiểm tra.<br>
+
+            - <strong>>Tìm hiểu từ vựng và ngữ pháp quan trọng:</strong> Biết từ vựng và ngữ pháp cơ bản sẽ giúp bạn trả
+            lời các câu hỏi một cách tự tin và chính xác.<br>
+
+            - <strong>Thời gian quản lý:</strong> Chia thời gian một cách hợp lý cho từng phần trong TOEIC Speaking. Hãy
+            cố gắng không dùng quá nhiều thời gian cho một phần để đảm bảo bạn kịp hoàn thành toàn bộ bài thi.<br>
+
+            - <strong>Tự tin và tập trung vào việc trả lời câu hỏi:</strong> Trong Phần 4, bạn sẽ thảo luận về một chủ
+            đề với người đồng nghiệp ảo. Tập trung vào việc trả lời câu hỏi một cách tự tin và không để tâm đến sự căng
+            thẳng.<br>
+
+            - <strong>Luyện tập thường xuyên:</strong> Thực hành là cách tốt nhất để cải thiện kỹ năng TOEIC Speaking.
+            Sử dụng sách học TOEIC hoặc các tài liệu luyện tập để tập trung vào các dạng câu hỏi khác nhau.<br>
+
+            - <strong>Tìm kiếm phản hồi và đánh giá:</strong> Nếu có thể, tìm kiếm phản hồi và đánh giá từ giáo viên
+            hoặc người có kinh nghiệm về TOEIC Speaking để cải thiện khả năng của bạn.<br>
+          </p>
+          <li id="third">Một số tip giúp điểm của bạn cao hơn</li>
+          <div class="img-wrapper"><img
+              src="https://img.freepik.com/free-vector/ideas-light-bulb-illustration_53876-8279.jpg?size=626&ext=jpg&uid=R121529161&ga=GA1.1.1027036393.1697741097&semt=sph"
+              alt="" width="50%" height="50%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <ol type="1">
+            <p>Để chấm điểm phần Speaking, ban giám khảo sẽ dựa trên các yêu cầu về: phát âm; ngữ điệu và trọng âm; ngữ
+              pháp; từ vựng; sự liên kết; nội dung trả lời thẳng vào câu hỏi; trình bày đầy đủ và hoàn thiện của mỗi thí
+              sinh để có được mức độ sát hạch cao nhất.
+              Vậy làm sao để chúng ta có thể chinh phục phần thi này? Đừng lo chúng mình ở đây để mách bạn các tips tự
+              ôn luyện Toeic Speaking nè.
+            </p>
+            <li class="big">Tip 1: Làm quen với các dạng câu hỏi</li>
+            <p>
+              Có ba dạng câu hỏi chính mà bạn có thể gặp trong bài kiểm tra: ý kiến, sự đồng ý và sự ưu tiên. Điều quan
+              trọng là bạn phải làm quen với các dạng câu hỏi mà bạn có thể gặp phải để có thể nhanh chóng chuẩn bị một
+              câu trả lời có liên quan và trả lời câu hỏi một cách chính xác. Học cách quan sát các câu hỏi, từ và cụm
+              từ chính để bạn biết câu hỏi đang yêu cầu điều gì.<br>
+              - <strong>Dạng câu hỏi về ý kiến:</strong> What do you think? What is your opinion?<br>
+              - <strong>Dạng câu hỏi về sự đồng ý:</strong> Do you agree or disagree? Would you be in favor of…?<br>
+              - <strong>Dạng câu hỏi về sự ưu tiên:</strong> Which do you think is better and why? Which do you prefer
+              and why? Would you rather X or Y?<br>
+            </p>
+            <li class="big">Tip 2: Hãy nghĩ xem câu hỏi yêu cầu gì và bạn cảm thấy thế nào về nó</li>
+            <p>
+              Bạn chỉ có 15 giây để chuẩn bị câu trả lời của mình, vì vậy bạn cần nhanh chóng hình thành các ý tưởng.
+              Điều quan trọng là bạn có thể hiểu chính xác những gì câu hỏi yêu cầu càng nhanh càng tốt. Bằng cách đó,
+              bạn sẽ có thời gian để suy nghĩ về những điểm chính trong câu trả lời cho câu hỏi 11 TOEIC Speaking và
+              cách bạn sẽ tổ chức câu trả lời của mình.
+            </p>
+            <li class="big">Tip 3: Bạn có thể bắt đầu câu trả lời của mình bằng cách nêu lại câu hỏi và sau đó thêm vào
+              ý kiến của mình</li>
+            <p>
+              Ví dụ: Do you agree or disagree with the following statement? “If you work hard, you will be successful.”
+              Give reasons and details to support your answer.<br>
+              => I (strongly/kind of) disagree with the opinion that if you work hard, you will be successful.
+            </p>
+            <li class="big">Tip 4: Nêu lên những điểm chính trong câu trả lời của bạn</li>
+            <p>
+              Bạn nên dùng một câu giới thiệu về những điểm chính trong câu trả lời cho câu hỏi 11 TOEIC speaking để bổ
+              trợ cho quan điểm của bạn. Điều này giúp bạn có thời gian sắp xếp câu trả lời của mình.<br>
+              Ví dụ: I agree with this statement because of the following reasons.<br>
+              I feel this way for several reasons.<br>
+              There are advantages and disadvantages for both, but I think X is better because…
+            </p>
+            <li class="big">Tip 5: Hỗ trợ ý kiến của bạn với ba điểm chính kèm theo các chi tiết bổ sung</li>
+            <p>
+              Để đạt điểm cao câu 11 TOEIC Speaking, bạn phải đưa vào các chi tiết bổ trợ cho ý kiến của mình. Bạn có
+              thể làm điều này bằng cách đưa ra lý do cho một ý kiến hoặc lập luận ủng hộ hoặc chống lại một quan
+              điểm.<br>
+              Ví dụ: My first / second / third reason for this view is…
+            </p>
+          </ol>
+          <li id="fourth">Một số lưu ý khi làm bài thi nói TOEIC</li>
+          <div class="img-wrapper"><img src="img/luuy.jpg" alt="" width="50%" height="50%" />
+            <span id="spc" class="notice">Hình ảnh minh họa
+            </span>
+          </div>
+          <P>
+            Dưới đây là một số lưu ý quan trọng khi thi nói TOEIC:<br>
+
+            - <strong>Chuẩn bị tốt trước khi thi:</strong> Hãy chuẩn bị tốt về kiến thức và tâm lý trước khi thi. Tránh
+            nhồi nhét kiến thức quá nhiều vào ngày thi. Nên có một giấc ngủ đủ và thoải mái để giữ tinh thần sảng khoái
+            và ổn định nhất 12.<br>
+
+            - <Strong>Lưu ý trước khi vào phòng thi:</Strong> Bạn cần mang theo phiếu đăng kí dự thi và chứng minh thư
+            bản gốc để được vào phòng thi. Bạn cần đến sớm hơn 30 phút để chuẩn bị hoặc tránh được những sự cố không
+            mong muốn. Khi vào phòng thi, bạn cần cởi áo khoác và giày dép để kiểm tra bằng máy và tay để đảm bảo bạn
+            không đem bất kì thiết bị nào vào phòng thi 1.<br>
+
+            - <strong>Lưu ý trong phòng thi:</strong> Khi làm bài, bạn không được rời khỏi phòng trong 2 tiếng làm bài
+            thi với bất kì lý do gì. Vì vậy bạn cần đi vệ sinh trước khi vào phòng thi và hạn chế uống nhiều nước. Bạn
+            không được đánh dấu bất kì kí hiệu nào trên bài thi, không được đảo thứ tự các phần trong bài thi, không
+            chọn 2 đáp án trên cùng 1 câu hỏi 1.<br>
+
+            - <strong>Lưu ý sau khi làm xong:</strong> Sau khi làm xong, bạn cần chờ cho giám thị thu lại phiếu trả lời
+            của bạn và rời khỏi phòng thi một cách yên tĩnh 1.
+          </p>
+        </ol>
+      </div>
+    </div>
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="https://i.pinimg.com/736x/e9/80/95/e980956a86d9d7d42284a1e4afb8d81a.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a href="https://jaxtina.com/de-thi-thu-toeic-speaking-theo-format-moi/">Đề thi TOEIC Speaking: Cấu trúc và
+              đề mô phỏng</a>
+          </li>
+          <li>
+            <a href="https://www.englishclub.com/esl-exams/ets-toeic-practice-speaking.php">TOEIC Practice -
+              Speaking</a>
+          </li>
+          <li>
+            <a href="https://prep.vn/blog/toeic-speaking/">Tất tần tật về TOEIC Speaking – Những điều bạn<br> cần
+              biết</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Hy vọng những kinh nghiệm này sẽ giúp bạn chuẩn bị tốt cho kỳ thi TOEIC và đạt được điểm số mong muốn. Chúc bạn sẽ
+      có một hành trình ôn luyện thật tốt và đạt được target mà mình mong muốn nhé! <br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <p><img src="img/logo.png" alt="Blue★"></p>
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Ticket</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="index.html">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>

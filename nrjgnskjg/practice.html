@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    /> -->
+  <title>PRACTICE</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      ;
+    /> -->
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    /> -->
+
+  <!-- Libraries Stylesheet -->
+  <!-- <link href="lib/animate/animate.min.css" rel="stylesheet" /> -->
+
+  <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" /> -->
+
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      5 WEBSITES THI THỬ TOEIC ONLINE <br />
+      UY TÍN & ĐỀ THI THỬ
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/people-with-magnifying-glasses-seo-search-engine-optimization-internet-website-visibility-online-marketing-strategy-faq-query-investigation-information-research-line-art-vector-illustration_107791-10795.jpg?w=1380&t=st=1697545434~exp=1697546034~hmac=aadfca7611e063327f62a55d09b34b293ad5344a3613921673598cb58b32029e"
+      width="80%" height="200px" />
+    <p class="des">
+      Bạn đang tìm kiếm các nguồn luyện thi thử TOEIC tại nhà một cách đơn
+      giản và hiệu quả nhất? Chúng tôi tự hào giới thiệu đến bạn một danh
+      sách các trang web hàng đầu, được thiết kế đặc biệt đồng thời kèm theo
+      một số tài liệu đề thi thử TOEIC uy tín để giúp bạn nâng cao điểm số
+      TOEIC của mình và đạt được thành công trong cuộc thi quan trọng này.
+      Hãy cùng xem nhé!
+    </p>
+    <span class="hidden-menu" onclick="openNav()"><i class="bi bi-list" style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Lợi ích của việc thi thử TOEIC online</a></li>
+      <li><a href="#second">Các website thi thử TOEIC online uy tín</a></li>
+      <li><a href="#third">Một số đề thi thử TOEIC có đáp án</a></li>
+      <li><a href="#fourth">Lưu ý khi làm đề thi thử TOEIC</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Lợi ích của việc thi thử TOEIC online</li>
+          <ol class="bigger" type="1">
+            <li class="big">Tiết kiệm thời gian di chuyển</li>
+            <p>
+              Thay vì việc di chuyển đến các trung tâm tiếng anh (hay những
+              những nơi tổ chức thi thử) để kiểm tra trình độ TOEIC của mình,
+              thì giờ đây bạn hoàn toàn có thể ngồi nhà và làm điều đó thông
+              qua đề thi thử TOEIC Online. Chỉ cần một chiếc máy tính có kết
+              nối mạng, bạn có thể kiểm tra được trình độ tiếng Anh của mình
+              ngay lập tức mà không tốn quá nhiều thời gian để di chuyển ra
+              các điểm thi thử. Bạn có thể sử dụng quỹ thời gian tiết kiếm này
+              cho các công việc có ích khác như là học tập, trau dồi kỹ
+              năng,.. một cách hiệu quả nhất.
+            </p>
+            <li class="big">Làm quen cấu trúc của đề thi</li>
+            <p>
+              Giống như mục đích chung của các đợt thi thử được tổ chức, việc
+              làm quen với cấu trúc đề thi TOEIC là một yếu tố quan trọng hàng
+              đầu. Cấu trúc bài thi thật ra sao, với các lời khuyên làm bài
+              như thế nào sẽ được bạn trải nghiệm một cách chân thật nhất
+              trong các bài thi thử TOEIC Online. Ngoài ra, khi làm các đề thi
+              thử TOEIC, bạn sẽ không chịu quá nhiều áp lực giống như tại các
+              điểm thi truyền thống hay như thi thật, nhờ đó giúp bạn bình
+              tĩnh và nâng cao tâm lý hơn khi bước vào làm bài kiểm tra..
+            </p>
+            <li class="big">Tiết kiệm chi phí</li>
+            <p>
+              Thông thường, mỗi lần thi thử tại các điểm thi thì sẽ có lệ phí
+              là trung bình từ khoảng 300.000-500.000 VNĐ. Vì thế nếu như bạn
+              muốn thi thử nhiều lần theo kiểu truyền thống thì sẽ rất tốn
+              kém. Tuy nhiên khi sử dụng các đề thi thử TOEIC online thì bạn
+              có thể tiết kiệm rất nhiều chi phí, thậm chí còn được miễn phí.
+              Có thể nói, thi thử TOEIC online là một giải pháp vô cùng hữu
+              hiệu 3 trong 1, giúp các bạn dễ dàng ôn tập và tiến gần hơn đến
+              ước mơ chinh phục ngoại ngữ của mình.
+            </p>
+          </ol>
+          <li id="second">Các website thi thử TOEIC online uy tín</li>
+          <ol type="1">
+            <li class="big">
+              <a href="https://www.examenglish.com/">Exam English</a>
+            </li>
+            <div class="img-wrapper"> <img class="special" src="./img/thi-thu-toeic-1.png" />
+              <span id="spc" class="notice">Các website thi thử TOEIC online uy tín
+              </span>
+            </div>
+            <p>
+              Exam English là website tự học tiếng Anh của nước ngoài, cung
+              cấp đa dạng bài test để người học ôn luyện, chuẩn bị cho các kỳ
+              thi lấy các loại chứng chỉ Cambridge, IELTS, TOEIC, TOEFL... Đặc
+              biệt website còn hỗ trợ ứng dụng dành cho điện thoại, mang lại
+              sự tiện lợi, linh hoạt trong quá trình học tập. <br />
+              Tại mục TOEIC, website cung cấp những thông tin tổng quan và cần
+              thiết để người học nắm được mục đích bài thi, các trình độ tiếng
+              Anh tương ứng với từng mức điểm. Exam English cũng hướng dẫn chi
+              tiết cách thức làm bài áp dụng cho từng dạng bài. Đây là nội
+              dung hữu ích cho những người mới bắt đầu. Trong phần kiểm tra,
+              mỗi bài test không được thiết kế theo cấu trúc đề thi mà phân
+              chia thành các bài nhỏ ở từng kỹ năng (Listening, Reading,
+              Speaking, Writing). Cách phân chia này hữu ích cho người học
+              muốn chú trọng trau dồi cho từng kỹ năng cụ thể.
+            </p>
+            <li class="big">
+              <a href="https://www.testden.com/">TestDEN</a>
+            </li>
+            <div class="img-wrapper"> <img src="./img/testDen.png" />
+              <span class="notice">Các website thi thử TOEIC online uy tín</span>
+            </div>
+            <p>
+              Website luyện thi TOEIC trực tuyến này phù hợp với các học viên
+              muốn học tiếng Anh lại từ đầu. Tài liệu luyện thi tại đây được
+              biên soạn theo tiêu chuẩn nghiêm ngặt và cập nhật kiến ​​thức
+              thường xuyên, sát với kỳ thi thực tế. Ngoài ra, TestDEN còn cung
+              cấp các khóa học tiếng Anh hữu ích và chuyên nghiệp. Ngày nay
+              TestDEN được sử dụng bởi nhiều trường ngoại ngữ, công ty và sinh
+              viên tại hơn 60 quốc gia.<br />
+              Nội dung đề thi và thời gian y hệt đề thi thật. Sau khi làm bài
+              thi thử thì TestDẸN sẽ chấm bài cho các bạn một cách khá chính
+              xác. Trang web này còn cung cấp cho người đọc một số tips để làm
+              tốt bài thi.
+            </p>
+            <li class="big">
+              <a href="https://englishteststore.net/#gsc.tab=0">English Test Store</a>
+            </li>
+            <div class="img-wrapper"><img src="./img/ets.jpg" />
+              <span class="notice">Các website thi thử TOEIC online uy tín</span>
+            </div>
+            <p>
+              Đây là trang hỗ trợ luyện thi TOEIC chất lượng, giúp người học
+              nâng cao kiến thức từ vựng, ngữ âm, ngữ pháp và rèn luyện kỹ
+              năng nghe, nói, đọc, viết hiệu quả thông qua các bài test. Đối
+              với người học có ý định thi TOEIC 4 kỹ năng thì đây là một lựa
+              chọn tốt để trải nghiệm làm đề thi Speaking và Writing. Ngoài ra
+              bạn còn có thể tải xuống các bài kiểm tra miễn phí để sử dụng
+              ngoại tuyến.<br />
+              Điểm cộng nữa của English Test Store là mang đến những trò chơi
+              giải trí liên quan tới tiếng Anh để người học ôn luyện một cách
+              thư giãn, tăng thêm hứng thú trong quá trình học tập.
+            </p>
+            <li class="big">
+              <a href="https://www.englishclub.com/">EnglishClub</a>
+            </li>
+            <div class="img-wrapper"> <img src="./img/Exam English.png" />
+              <span class="notice">Các website thi thử TOEIC online uy tín</span>
+            </div>
+            <p>
+              Website này dành cho các bạn mới bắt đầu học hoặc đang tìm hiểu
+              về TOEIC. Nó giúp bạn bổ sung và sắp xếp lại hệ thống kiến thức
+              của bạn từ cơ bản đến nâng cao. Bên cạnh đó, bạn còn được vận
+              dụng kiến thức đã học được luyện tập với các đề thi TOEIC mà
+              website đã biên soạn để giúp bạn cải thiện và nâng cao khả năng
+              tiếng Anh của bản thân.<br />
+              Không chỉ với những người học hoặc đang tìm hiểu về TOEIC mà
+              ngay cả các thầy cô giáo cũng có thể sử dụng website này để sử
+              dụng cho việc giảng dạy online hoặc trau dồi kiến thức của bản
+              thân.<br />
+              Ngoài các kiến thức cơ bản về TOEIC Englishclub còn giúp bạn
+              trau dồi thêm ngữ pháp, chúng được phân chia theo nhiều cấp độ
+              với từng chủ đề khác nhau như: Bản tin, chương trình phát thanh,
+              dạng test, dạng truyện ngắn, dạng bài tập,….
+            </p>
+            <li class="big">
+              <a href="https://estudyme.com/toeic-testpro/">TOEIC-testpro</a>
+            </li>
+            <div class="img-wrapper"> <img src="./img/webtoeic.png" />
+              <span class="notice">Các website thi thử TOEIC online uy tín</span>
+            </div>
+            <p>
+              TOEIC-testpro là một trong các trang web học TOEIC miễn phí,
+              thực hiện các bài thi luyện nghe và đọc TOEIC trực tuyến. Mỗi
+              bài test có 200 câu hỏi theo format, nội dung, và độ khó tương
+              đương với đề TOEIC thật. Ngoài ra, trang web còn có phần mini
+              test TOEIC cho bạn luyện tập trong thời gian ngắn nhưng vẫn đủ
+              nội dung.<br />
+
+              Đồng thời, ngay sau khi hoàn thành bài kiểm tra, bạn sẽ được
+              nhận điểm của mình là bao nhiêu. Điều này sẽ giúp bạn biết kỹ
+              năng của mình nằm ở đâu, bạn cần cải thiện điều gì và sau đó lập
+              kế hoạch học tập và nỗ lực để đạt được điểm TOEIC mong muốn. Đặc
+              biệt hơn các trang web học TOEIC miễn phí khác, TOEIC-testpro có
+              các bài luyện tập từng phần TOEIC từ Part 1 đến Part 7 giúp các
+              bạn ôn luyện chi tiết và cải thiện những phần còn yếu.
+            </p>
+          </ol>
+          <li id="third">Một số đề thi thử TOEIC có đáp án</li>
+          <ol type="1">
+            <li class="big">Bộ ETS TOEIC</li>
+            <p>
+              Đã ôn thi TOEIC thì không một ai có thể bỏ qua bộ sách ETS. Đây
+              là bộ đề do YBM độc quyền xuất bản cùng với ETS (viết tắt của
+              Educational Testing Service) – đơn vị tổ chức khảo thí uy tín,
+              ra đề thi và cấp chứng chỉ TOEIC quốc tế. Nhằm giúp học viên
+              tiếp cận và làm quen với đề thi TOEIC thật, bộ sách ETS được
+              biên soạn cực kì chi tiết, các đề thi thử TOEIC đều bám sát theo
+              cấu trúc đề thi thật. Dưới đây là bộ sách TOEIC mới nhất được
+              tổng hợp những bộ đề theo format mới, giúp các bạn làm quen hơn
+              với format mới này. Sau đây là link tải trọn bộ ETS TOEIC (PDF +
+              Audio + Đáp án):
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a
+                  href="https://drive.google.com/drive/folders/1D_iO5RwHzYeQbYE-XJrIlLQ278IvoPca?fbclid=IwAR062E1wpiF7ni0Hc1SFpoGAvXa8ysezDjza8NkkuStu_tTIzPBW-NCP4i8">
+                  DOWNLOAD PDF + AUDO ETS TOEIC 2023</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1P3h8pTt0DHKplDL3XEDhc1Rz3064bDKJ">
+                  DOWNLOAD PDF + AUDO ETS TOEIC 2022</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1i24taR9Gj1Bjc7niNJdE281SPwlJFjG">
+                  DOWNLOAD PDF + AUDO ETS TOEIC 2021</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1ziHrkJxXWeVlnC74avqk5W5tDYIyu8zG">
+                  DOWNLOAD PDF + AUDO ETS TOEIC 2020</a>
+              </button>
+            </div>
+            <li class="big">ECONOMY TOEIC Vol 1, 2, 3, 4, 5</li>
+            <p>
+              Economy TOEIC là bộ sách kinh điển với các sĩ tử đang ôn luyện
+              thi TOEIC hiện nay. Sách được tác giả biên soạn đầy đủ đề thi
+              thử TOEIC các cấp độ, từ cơ bản cho đến nâng cao, với độ khó
+              tăng dần từ Vol 1 cho đến Vol 5. Mỗi phiên bản bao gồm 2 cuốn
+              TOEIC Economy RC (có 10 đề thi reading) và TOEIC Economy LC (có
+              10 đề thi listening). Sở hữu 5 VOL TOEIC Economy là bạn đã có 50
+              đề thi thử TOEIC. <br />
+              Hãy nhấp vào các link dưới đây để tải trọn bộ Economy TOEIC nhé:
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1LP4xk_cJWlkrcQZLO9IevcLgWVBWe9nr?usp=sharing">
+                  DOWNLOAD Vol 1 PDF + AUDIO</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1ZYPsMKA04fDrysIT__CFHY6HcR7AokrL?usp=sharing">DOWNLOAD
+                  Vol 2 PDF + AUDIO</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1CgxIyl1xJsxXxXBZ--sGZ8qh6t_B0B24?usp=sharing">
+                  DOWNLOAD Vol 3 PDF + AUDIO</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/1O69kfEIEpJlQ69DeLnWbOuondLlC4hJE?usp=sharing">
+                  DOWNLOAD Vol 4 PDF + AUDIO</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://drive.google.com/drive/folders/17qWrdodrALH0nPYOBJTJO3XydYdmljrw?usp=sharing">
+                  DOWNLOAD Vol 5 PDF + AUDIO</a>
+              </button>
+            </div>
+            <li class="big">Hacker TOEIC</li>
+            <p>
+              Hacker TOEIC là cuốn sách luyện thi thử TOEIC cập nhật những xu
+              hướng mới nhất của đề TOEIC. Series này gồm 3 cuốn: Hacker 1,
+              Hacker 2 và Hacker 3. Mỗi bộ có 2 cuốn TOEIC LISTENING (10 đề
+              thi) và TOEIC READING (10 đề thi). Theo nhà xuất bản, độ khó của
+              đề thi cũng sẽ tăng dần theo từng bộ. Cụ thể: Hacker 1:
+              500-600+. Hacker 2: 600-750 Hacker 3: 700-850+ Nếu muốn đạt điểm
+              TOEIC cap thì bạn nên tập trung luyện đề để đạt mức điểm cao thì
+              hãy học một trong 2 cuốn Hacker 2 & 3. Download tài liệu tại
+              đây:
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://bit.ly/3rYcbkp">
+                  DOWNLOAD BỘ SÁCH HACKER TOEIC 2 & 3</a>
+              </button>
+            </div>
+          </ol>
+          <li id="fourth">Lưu ý khi làm đề thi thử TOEIC</li>
+          <ol type="1">
+            <p class="speciall">
+              Trong quá trình làm đề thi thử TOEIC Online, bạn cần đặc biệt
+              ghi nhớ một số lưu ý để hoàn thành bài thi một cách chất lượng
+              nhất và thu về những kinh nghiệm cho bản thân.
+            </p>
+            <li class="big">Làm đúng thời gian như thật</li>
+            <p>
+              Bạn nên làm bài thi thử đúng như thời gian quy định 2 tiếng đồng
+              hồ cho 2 kỹ năng Listening & Reading, 80 phút cho 2 kỹ năng
+              Writing & Speaking giống như thời gian thi thật. Lưu ý nên chọn
+              cho mình một không gian yên tĩnh, tránh người khác làm phiền,
+              tắt thông báo các vật dụng như điện thoại, TV để tránh xao
+              nhãng. Đặc biệt, bạn không nên dừng bài thi giữa chừng mà hãy cố
+              gắng làm hết đề thi thử nhé.
+            </p>
+            <li class="big">Không chọn đáp án ngẫu nhiên</li>
+            <p>
+              Khi làm bài thi thử, bạn nên bỏ qua những câu không biết để sau
+              khi làm xong nếu còn thời gian thì có thể suy nghĩ tiếp, không
+              nên đánh dấu câu trả lời một cách ngẫu nhiên để biết được khả
+              năng của mình một cách chính xác nhất sau bài thi. Nếu một số
+              câu trả lời ngẫu nhiên của bạn đúng thì số điểm sẽ tăng lên chỉ
+              dựa vào sự may mắn của bạn mà thôi.
+            </p>
+            <li class="big">Kiểm tra và rà soát lại các lỗi sai</li>
+            <p>
+              Sau khi làm bài thi thử xong, bạn nên kiểm tra kỹ lại đáp án, kể
+              cả những đáp án đúng và đáp án sai. Với các đáp án đúng, bạn cần
+              ghi lại các mẹo để hoàn thành câu hỏi với những câu tương tự.
+              Đối với các đáp án sai hoặc không biết thì bạn nên tìm hiểu kĩ
+              xem lý do sai là gì và giải pháp để hoàn thành nó một cách tốt
+              nhất cho lần sau.
+            </p>
+          </ol>
+        </ol>
+      </div>
+    </div>
+
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="https://i.pinimg.com/564x/78/f0/34/78f0340ad0066a16fa443f249649b501.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a href="https://www.anhngumshoa.com/tin-tuc/5-loi-ich-thi-thu-toeic-va-nhung-dieu-ban-nen-biet-37352.html">5
+              Lợi ích thi thử Toeic và những điều bạn<br />
+              cần biết</a>
+          </li>
+          <li>
+            <a href="https://prep.vn/blog/tai-lieu-on-thi-toeic/">Tổng hợp web và apps tài liệu học TOIEC <br />chất
+              lượng
+              nhất</a>
+          </li>
+          <li>
+            <a
+              href="https://anhnguathena.vn/tron-bo-tai-lieu-tu-hoc-toeic-0-900-file-pdf--video-bai-giang--audio-id888">Trọn
+              bộ tài liệu tự học TOEIC 0-900+</a>
+          </li>
+          <li>
+            <a href="https://wiseenglish.edu.vn/tai-lieu-tu-hoc-toeic">Tổng hợp tài liệu tự học TOEIC 2023</a>
+          </li>
+          <li>
+            <a href="https://bkenglish.edu.vn/vn/40-bo-tai-lieu-on-thi-toeic-hieu-qua.html">40 Bộ tài liệu ôn thi TOEIC
+              hiệu quả
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Trên đây là toàn bộ những website và tài liệu luyện thử TOEIC tại nhà
+      hiệu quả, đồng thời chia sẻ những kinh nghiệm khi ôn tập đề. Hãy tham
+      khảo và vận dụng ngay nhé, chúc các bạn đạt được số điểm mà mình mong
+      muốn nhé! <br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <p><img src="img/logo.png" alt="Blue★"></p>
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Ticket</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="index.html">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>

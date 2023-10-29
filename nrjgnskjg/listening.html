@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    /> -->
+  <title>LISTENING</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/stars.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="logo">Blue⭐</a>
+    <a href="index.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Experience
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="writing.html">Writing</a>
+        <a href="practice.html">Practice</a>
+        <a href="process.html">Process</a>
+      </div>
+    </div>
+    <a href="index.html">About us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">Blue⭐</a>
+      <a class="searchbar1" onclick={openSearch()} title="Open overlay"> <svg xmlns="http://www.w3.org/2000/svg"
+          width="25" height="25" fill="#027BFF" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+          <path
+            d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+        </svg></a>
+      <a href="index.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Experience
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="listening.html">Listening</a>
+          <a href="reading.html">Reading</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="writing.html">Writing</a>
+          <a href="practice.html">Practice</a>
+          <a href="process.html">Process</a>
+        </div>
+      </div>
+      <a href="index.html">About us</a>
+      <a href="index.html" class="active">Home</a>
+    </div>
+  </div>
+
+  <div id="content" class="middle-header-content">
+    <h1 class="header-title">
+      LISTENING
+    </h1>
+    <img
+      src="https://img.freepik.com/free-vector/customer-support-service-operators-with-headset_107791-13463.jpg?w=1380&t=st=1698350781~exp=1698351381~hmac=8b0e33cffc6158934b431f7db15750dc445fec9d541d5b8115b4f449e577e21a"
+      width="80%" height="200px" />
+
+    <p class="des">
+      Listening toeic là một kỹ năng khá khó đòi hỏi người học phải mất khá nhiều thời gian,
+      công sức và phải có một phương pháp đúng thì người học mới có thể đạt được điểm số cao trong kì thi toeic.
+      Như vậy, để có thể tìm phương pháp nghe toeic hiệu quả, bạn hãy bắt đầu từ việc học nghe đúng cách.
+      Có một thực tế là, bạn đang nắm chắc được ngữ pháp, từ vựng hay văn phong tiếng Anh tuy nhiên khi nói chuyện với
+      người bản ngữ nào đó,
+      bạn vẫn bị ù tai bởi không nghe kịp, khó hiểu và đương nhiên là sẽ khó có thể tiếp tục câu chuyện được. Dưới đây,
+      mình muốn chia sẻ một số kinh nghiệm quý báu để giúp bạn nâng cao kỹ năng nghe TOEIC.
+    </p>
+    <span class="hidden-menu" onclick="openNav()"><i class="bi bi-list" style="font-size: 40px; color: teal"></i></span>
+  </div>
+  </div>
+
+  <hr class="lines">
+  <div class="header-list">
+    <h1 class="mucluc">Mục lục</h1>
+    <ol class="list" type="I">
+      <li><a href="#first">Cấu trúc phần Listening (Nghe hiểu)</a></li>
+      <li><a href="#second">Một số cách giúp bạn ôn luyện kỹ năng nghe</a></li>
+      <li><a href="#third">Các sách nghe, podcast giúp bạn tìm hiểu thêm về kỹ năng nghe</a></li>
+      <li><a href="#fourth">Một số lưu ý khi làm bài thi nghe TOEIC</a></li>
+    </ol>
+  </div>
+  <div class="body">
+    <div class="left-body-content">
+      <div class="benefit" id="benefit">
+        <ol class="biggest" type="I">
+          <li id="first">Cấu trúc phần Listening (Nghe hiểu)</li>
+          <ol class="bigger" type="1">
+            <li class="big">Part 1: Mô tả ảnh</li>
+            <p>Số câu: 6 câu.<br>
+              TOEIC Listening part 1 gồm 6 bức ảnh, mỗi bức ảnh sẽ đi kèm với 4 đáp án khác nhau, nhiệm vụ của thí sinh
+              là xem các bức ảnh, lắng nghe và lựa chọn câu trả lời mô tả đúng nhất về bức ảnh đó.<br>
+              Lưu ý: các đáp án sẽ không được hiển thị trên đề thi, thí sinh chỉ được nghe một lần duy nhất để chọn ra
+              đáp án chính xác.
+            </p>
+            <li class="big">Part 2 TOEIC: Hỏi đáp</li>
+            <p>Số câu: 25 câu.</p>
+            <p>
+              Với phần TOEIC Listening part 2 thí sinh sẽ được nghe lần lượt là câu hỏi và 3 đáp án trả lời đi kèm,
+              nhiệm vụ của thí sinh là tìm ra câu trả lời phù hợp với nội dung câu hỏi nhất.
+            </p>
+            <p>Lưu ý: tương tự như phần 1, nội dung câu hỏi và các đáp án sẽ không được in trong đề. Phần này được đánh
+              giá không khó nhưng thí sinh lại thường xuyên chọn sai đáp án do những thiếu sót liên quan đến từ vựng và
+              phát âm.</p>
+            <li class="big">Part 3 TOEIC - Đoạn hội thoại ngắn </li>
+            <p>Số câu: 39 câu.</p>
+            <p>
+              Phần TOEIC Listening part 3 tổng cộng có 13 đoạn hội thoại ngắn, mỗi đoạn bao gồm 3 câu hỏi, trong đó mỗi
+              câu hỏi sẽ đi kèm với 4 đáp án khác nhau, nhiệm vụ của thí sinh là nghe hiểu nội dung cuộc trò chuyện và
+              chọn câu trả lời chính xác.
+            </p>
+            <p>Lưu ý: các câu hỏi và đáp án sẽ được in sẵn trên đề bài. Bên cạnh việc thay đổi số lượng người xuất hiện
+              trong các đoạn hội thoại là 3 thay vì 2 như thể thức đề thi cũ, thí sinh cần suy luận từ những thông tin
+              nghe được và những biểu đồ hay bảng biểu cho sẵn để lựa chọn đáp án phù hợp nhất.</p>
+            <li class="big">Part 4 TOEIC - Bài phát biểu ngắn </li>
+            <p>Số câu: 30 câu.</p>
+            <p>Thí sinh lắng nghe 10 đoạn thông tin ngắn từ một người nói, mỗi đoạn sẽ tương ứng với 3 câu trả lời,
+              nhiệm vụ của thí sinh là lắng nghe thông tin kết hợp với những biểu đồ và hình ảnh có sẵn trên đề (nếu có)
+              để chọn ra câu trả lời đúng. Các chủ đề thường gặp là tin tức, phát thanh, du lịch, đoạn ghi âm…</p>
+          </ol>
+          <li id="second">Một số cách giúp bạn ôn luyện kỹ năng nghe</li>
+          <p>Việc ôn thi TOEIC không đơn thuần là một bài kiểm tra, mà còn là một hành trình rèn luyện sự thành thạo về
+            kỹ năng ngôn ngữ tiếng Anh. Dưới đây là một số cách mà mình ôn luyện kỹ năng nghe:<br>
+            - <strong>Trau dồi từ vựng và ngữ pháp:</strong> Một phần quan trọng trong việc hiểu và làm bài thi TOEIC là
+            vốn từ vựng và
+            kiến thức ngữ pháp của bạn. Học từ vựng và ngữ pháp thường xuyên sẽ giúp bạn hiểu rõ nội dung và ý nghĩa của
+            các đoạn hội thoại.<br>
+            - <strong>Làm quen với kỹ năng Đoán:</strong> TOEIC Listening đòi hỏi bạn phải sử dụng kỹ năng đoán thông
+            minh. Khi bạn gặp
+            khó khăn về từ vựng hoặc ngữ pháp, hãy dựa vào ngữ cảnh để đoán nghĩa. Điều này có thể giúp bạn hiểu rõ hơn
+            nội dung tổng thể.<br>
+            - <strong>Luyện nghe hàng ngày:</strong> Hãy dành ít nhất 30 phút mỗi ngày để lắng nghe tiếng Anh. Nghe các
+            bản tin, podcast,
+            và xem video bằng tiếng Anh để làm quen với giọng điệu và từ vựng đa dạng.<br>
+            - <strong>Luyện tập trên các tài liệu ôn thi TOEIC:</strong> Sử dụng các tài liệu ôn thi TOEIC, sách giáo
+            trình, và bài thi
+            mẫu để làm quen với định dạng và loại câu hỏi trong bài thi thực tế.<br>
+            - <strong>Luyện nghe theo chủ đề:</strong> Chọn các bài nghe theo các chủ đề bạn cảm thấy khó khăn. Luyện
+            tập thường xuyên
+            trên các chủ đề này để nâng cao khả năng lắng nghe.<br>
+            - <strong>Tham gia vào các diễn đàn học tiếng trên mạng:</strong> Mình có biết đến chương trình “We Enjoy
+            Learning English”
+            trên Facebook. Hoạt động của chương trình khá đơn giản: hàng tuần tối admin sẽ post bài nghe, bạn nghe rồi
+            đánh vào file word gửi cho admin. Đây là một cách hay để có thể có một động lực thúc đẩy việc học và có sự
+            động viên giúp đỡ từ admin và các bạn trong nhóm. Link:<a href="www.facebook.com/WELEFP/">
+              www.facebook.com/WELEFP/</a> <br>
+            - <strong>Cơ hội giao tiếp:</strong> Không gì tốt hơn là trực tiếp giao tiếp với người bản xứ. Nếu bạn có
+            thể tìm kiếm cơ hội
+            dùng tiếng Anh trực tiếp thì khả năng nghe nói sẽ tiến bộ lên rất nhanh.<br>
+            - <strong>Tải các video chương trình, phim tài liệu, phim dài tập hay phim điện ảnh… theo chủ đề bạn thích
+              và nghe.</strong>
+            Lúc đầu nên nghe phụ đề tiếng Anh, bạn có thể không hiểu được hết nhưng khi họ phát âm bạn theo dõi theo phụ
+            đề cũng sẽ nắm được cách người ta nói, biết thêm được những cụm từ trong giao tiếp. Bây giờ có Youtube cũng
+            là một nguồn có nhiều video, nhiều chương trình hay để theo dõi.<br>
+            - <strong>Tự tin và tĩnh tâm:</strong> Cuối cùng, hãy tự tin và tĩnh tâm khi làm bài thi thật. Tin vào khả
+            năng của mình và
+            tập trung vào nhiệm vụ. Đừng để áp lực làm mất đi sự tự tin.<br>
+            Nếu bạn muốn tìm hiểu thêm về kỹ năng nghe TOEIC, bạn có thể truy cập vào các trang web sau đây để tham khảo
+            thêm:
+          </p>
+          <div class="btnets">
+            <button class="btn-dload">
+              <a href="https://www.anhngumshoa.com/tin-tuc/cach-luyen-nghe-toeic-de-am-tron-495-495-diem-37591.html">
+                CÁCH LUYỆN NGHE TOEIC ĐỂ ẴM TRỌN 495/495 ĐIỂM</a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://anhletoeic.com/tai-lieu-toeic/toeic-listening.html">
+                NHỮNG TIPS VÀNG ĐẠT ĐIỂM CAO TOEIC LISTENING</a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://haloenglish.edu.vn/cach-luyen-nghe-toeic-hieu-qua-giup-dat-495-diem/">
+                CÁCH LUYỆN NGHE TOEIC HIỆU QUẢ GIÚP ĐẠT 495 ĐIỂM</a>
+            </button>
+            <button class="btn-dload">
+              <a href="https://www.tuhocanhvan.com/cai-thien-ky-nang-nghe-listening-trong-toeic/">
+                CẢI THIỆN KỸ NĂNG NGHE (LISTENING) TRONG TOEIC</a>
+            </button>
+          </div>
+          <li id="third">Các sách nghe, podcast giúp bạn tìm hiểu thêm về kỹ năng nghe</li>
+          <ol type="1">
+            <li class="big">Sách nghe:</li>
+            <p>
+              Mình luyện nghe chủ yếu từ sách. Cứ thế là nghe băng đĩa rồi làm bài tập trong sách, rồi lại tự sửa. Dưới
+              đây là danh sách một số sách luyện nghe tiếng Anh:
+            </p>
+            <p>
+              - <strong>“Tactics for listening” của Jack C. Richards:</strong> tài luyện nghe tiếng Anh cho người mới
+              bắt đầu, sách gồm 3
+              cuốn biên soạn theo cấp độ tăng dần.<br>
+              - <strong>“Listen in” của David Nunan:</strong> 3 cuốn phù hợp với mọi trình độ, nâng cao theo từng chủ
+              đề, mỗi giáo trình
+              gồm 20 bài.<br>
+              - <strong>“Listen carefully” của Jack C. Richards:</strong> 15 bài nghe về các chủ đề đơn giản hàng
+              ngày.<br>
+              - <strong>“Open Forum” của xuất bản bởi Oxford University Press:</strong> 3 cuốn biên soạn theo cấp độ
+              nâng dần, bài nghe
+              mang tính học thuật, nội dung của cuốn sách tập trung vào kỹ năng nghe và tranh luận xoay quanh các vấn đề
+              của cuộc sống. Giúp người học cải thiện không chỉ kỹ năng nghe mà còn nâng cao vốn ngôn ngữ, tư duy phản
+              biện mỗi ngày.<br>
+              - <strong>“Get ready for ielts: Listening” của Jane Short:</strong> Sách kinh điển dành cho những bạn mới
+              bắt đầu học
+              IELTS. Sách được viết rất dễ hiểu, hệ thống bài học logic và đơn giản với 12 bài học được chia theo chủ đề
+              quen thuộc sẽ xuất hiện nhiều trong Listening. Sách bao gồm 3 phần: Language development, Skills
+              development, Exam Practice. <br>
+              - <strong>Giáo trình miễn phí online của British Council:</strong> Phần Listening ở đây được biên soạn
+              theo trình độ từ A1đến C1.
+              Với các chủ đề quen thuộc, chủ yếu là những đoạn hội thoại giao tiếp thực tế quen thuộc.
+              Với mỗi bài nghe sẽ có transcript và những bài tập kèm theo.
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://learnenglish.britishcouncil.org/">
+                  Learn English- British Council</a>
+              </button>
+            </div>
+            <li class="big">TED Talk</li>
+            <div class="img-wrapper"><img
+                src="https://i.pinimg.com/564x/fb/45/07/fb45076bedee3d473bf841411c40684d.jpg" />
+              <span id="spc" class="notice">Hình ảnh minh họa
+              </span>
+            </div>
+            <p>
+              Nếu vừa muốn luyện nghe miễn phí, vừa học hỏi thêm được điều mới truyền cảm hứng thì nên tìm đến TED
+              Talks.
+              TED Talks là những bài diễn thuyết mang tính truyền cảm hứng được ghi lại tại các sự kiện của TED. Một
+              video TED Talks được giới hạn bởi độ dài 18 phút với ý nghĩa mang đến cho người nghe một lượng thông tin
+              vừa đủ. Người nghe có thể tập trung suy nghĩ trong một khoảng thời gian và sau khi kết thúc 18 phút, họ sẽ
+              có thể ngẫm lại những gì đã nghe được. TED Talks thường được đăng tải trên Youtube. Bạn có thể tập nghe
+              trước bằng việc không bật phụ đề, sau đó bật phụ đề lên để kiểm tra lại những phần mình còn nghe thiếu.
+              Bấm vào link này để xem danh sách và link tới những TED Talks được xem nhiều nhất:
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://www.ted.com/playlists/171/the_most_popular_ted_talks_of_all_time">
+                  The most popular TED Talks of all time</a>
+              </button>
+            </div>
+            <p>
+              Mình ghi lại tên và link của một số TED Talks trong top đầu ở dưới đây. Bạn có thể vào thẳng Youtube để
+              xem dùng link dưới đây:
+            </p>
+            <div class="btnets">
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=qp0HIF3SfI4">
+                  “ How great leaders inspire action” </a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=7jx0dTYUO5E">
+                  “10 things you didn’t know about orgasm”</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=eIho2S0ZahI">
+                  “How to speak so that people want to listen”</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc">
+                  “Your body language may shape who you are”</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=LiLS7U7YIdc">
+                  “This is what happens when you reply to spam email”</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=KM4Xe6Dlp0Y">
+                  “Looks aren’t everything. Believe me, I’m a model.”</a>
+              </button>
+              <button class="btn-dload">
+                <a href="https://www.youtube.com/watch?v=8KkKuTCFvzI">
+                  “What makes a good life? Lessons from the longest study on happiness”</a>
+              </button>
+            </div>
+            <li class="big">Podcasts</li>
+            <div class="img-wrapper"><img
+                src="https://i.pinimg.com/564x/6f/8a/4f/6f8a4ff238f223ceab607551def30ccf.jpg" />
+              <span id="spc" class="notice">Hình ảnh minh họa
+              </span>
+            </div>
+            <p>
+              Bạn có thể download phone app “Podcasts” để lắng nghe một số series podcast,
+              giống như TED Talks, bạn có thể vừa học nghe tiếng Anh vừa bổ sung thêm được kiến thức hữu ích.
+              Danh sách một số Podcast hay mà mình biết là: <br>
+              - <strong>“More or less: Behind the Statistics”:</strong> Giải thích về ý nghĩa đằng sau những số liệu
+              thống kê. <br>
+              - <strong>“Dollar & Sense: The Brookings Trade Podcast”:</strong> Podcast về chủ đề thương mại mua bán
+              trao đổi. <br>
+              - <strong>“TED talks daily”:</strong> series của TED Talks.
+            </p>
+          </ol>
+          <li id="fourth">Một số lưu ý khi làm bài thi nghe TOEIC</li>
+          <P>
+            Làm bài thi TOEIC Listening là một thách thức trong việc đạt được điểm cao.
+            Dưới đây là một số lưu ý quan trọng để bạn có kết quả tốt trong bài thi TOEIC Listening:<br>
+
+            - <strong>Làm quen với định dạng bài thi:</strong> Hãy làm quen với định dạng của bài thi TOEIC Listening
+            trước khi thi. Điều
+            này giúp bạn biết cách làm bài hiệu quả và không bị bất ngờ trong phòng thi.<br>
+
+            - <strong>Chú ý vào hướng dẫn:</strong> Luôn đọc và tuân thủ các hướng dẫn được cung cấp trong đề thi. Điều
+            này có thể giúp
+            bạn hiểu rõ cách làm từng phần của bài thi.<br>
+
+            - <strong>Lắng nghe chú ý:</strong> Hãy tập trung vào việc lắng nghe và cố gắng hiểu nội dung. Ngữ pháp và
+            từ vựng cũng quan
+            trọng, nhưng hiểu nội dung là quan trọng nhất.<br>
+
+            - <strong>Ghi chú khi nghe:</strong> Bạn được phép ghi chú trong quá trình lắng nghe. Sử dụng nó để ghi nhớ
+            thông tin quan
+            trọng hoặc tóm tắt nội dung.<br>
+
+            - <strong>Biết cách ước tính câu trả lời:</strong>Nếu bạn không chắc chắn về câu trả lời, hãy sử dụng kiến
+            thức và ngữ cảnh
+            để ước tính. Thông thường, một số đáp án có thể dễ bị loại trừ.<br>
+
+            - <strong>Lắng nghe các loại giọng điệu:</strong> TOEIC Listening thường bao gồm nhiều loại giọng điệu khác
+            nhau, từ người
+            nước Anh, Mỹ, Úc, và nhiều quốc gia khác. Hãy quen thuộc với cách mà các loại giọng này thể hiện trong bài
+            nghe.<br>
+
+            - <strong>Thực hành thường xuyên:</strong> Thực hành thường xuyên: Luyện tập là cách tốt nhất để cải thiện
+            kỹ năng nghe. Sử dụng sách học TOEIC hoặc
+            ứng dụng học tiếng Anh để thực hành thường xuyên.<br>
+
+            - <strong>Quản lý thời gian:</strong> TOEIC Listening yêu cầu bạn làm nhiều bài tập trong một khoảng thời
+            gian hạn chế. Hãy
+            quản lý thời gian của bạn để không bị kẹt trong một bài và có đủ thời gian cho tất cả các phần.<br>
+
+            - <strong>Tập trung vào phần trước:</strong> Nếu bạn gặp khó khăn với một phần cụ thể, hãy chuyển qua phần
+            tiếp theo và quay
+            lại sau nếu còn thời gian. Đừng để một phần khó khăn làm mất thời gian của bạn.<br>
+
+            - <strong>Tự tin và thư giãn:</strong> Điều quan trọng nhất là hãy tự tin và thư giãn trong quá trình làm
+            bài. Đừng lo lắng quá mức, vì sự tự tin có thể giúp bạn làm tốt hơn.
+          </P>
+        </ol>
+      </div>
+    </div>
+    <div id="right-content" class="right-body-content">
+      <div class="ads">
+        <img src="https://i.pinimg.com/originals/1f/fe/73/1ffe73df5b17d071ec2776c2c390315b.jpg" alt="" />
+      </div>
+      <div class="content-search">
+        <input type="text" placeholder="Search here" />
+        <button class="search-btn">Search</button>
+      </div>
+      <form id="contact" action="" method="post">
+        <h2>Liên hệ với chúng tôi</h2>
+        <fieldset>
+          <input placeholder="Tên của bạn" type="text" tabindex="1" required autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email của bạn" type="email" tabindex="2" required />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Số điện thoại của bạn" type="tel" tabindex="3" />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Nội dung tin nhắn" tabindex="4" required></textarea>
+        </fieldset>
+        <button name="submit" type="submit" id="contact-submit">Gửi</button>
+      </form>
+
+      <div font-size:20px class="recent">
+        <h5 class="recent_title">Các bài viết liên quan</h5>
+        <ul>
+          <li>
+            <a href="https://tienganhmoingay.com/phan-tich-de-thi-toeic/">Chiến lược làm các phần của đề thi TOEIC</a>
+          </li>
+          <li>
+            <a href="https://mochidemy.com/blog/top-5-kenh-luyen-nghe-toeic-hieu-qua-nhat/">Top 5 kênh luyện nghe TOEIC
+              hiệu quả nhất</a>
+          </li>
+          <li>
+            <a
+              href="https://www.anhngumshoa.com/tin-tuc/kinh-nghiem-phan-chia-thoi-gian-lam-bai-thi-toeic-hop-ly-nhat-38059.html">Kinh
+              nghiệm phân chia thời gian làm bài thi <br> TOEIC hợp lí nhất</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>
+      Hy vọng những kinh nghiệm này sẽ giúp bạn chuẩn bị tốt cho kỳ thi TOEIC và đạt được điểm số mong muốn. Hãy nhớ
+      rằng, việc cải thiện kỹ năng nghe đòi hỏi sự kiên nhẫn và thực hành thường xuyên. Chúc bạn thành công trong hành
+      trình học tiếng Anh và ôn thi TOEIC<br />
+      <span class="straight"> GOOD LUCK 🌟</span>
+    </p>
+  </div>
+  <div class="">
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <section>
+          <p><img src="img/logo.png" alt="Blue★"></p>
+        </section>
+
+        <section>
+          <p class="title">OTHER LINKS</p>
+          <p><a href="#">Ticket</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+          <p class="title">SHORT CUT</p>
+          <p><a href="contact.html">Contact Us</a></p>
+          <p><a href="index.html">Skill</a></p>
+          <p><a href="index.html">About us</a></p>
+          <p><a href="index.html">More like us</a></p>
+        </section>
+
+        <section>
+          <p class="title">News Letter</p>
+          <p><input type="email" placeholder="Email*" required><button type="submit"><i
+                class="fa fa-paper-plane"></i></button></p>
+          <p><a title="Address, Country, Pincode"><i class="fa fa-map-marker"></i></a> <a href="#"><i
+                class="fa fa-phone"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></p>
+        </section>
+      </div>
+
+    </footer>
+
+
+    <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="script/script-1.js"></script>
+</body>
+
+</html>
